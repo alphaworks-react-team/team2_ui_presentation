@@ -1,8 +1,9 @@
 ## Contributors
-- [Ari Agress](https://github.com/ariagress) 
-- [Franco Phan](https://github.com/Frank-5850) 
-- [Marcus G](https://github.com/mgdeveloper45) 
-- [Seena Nadimi](https://github.com/seenanadimi) 
+
+- [Ari Agress](https://github.com/ariagress)
+- [Franco Phan](https://github.com/Frank-5850)
+- [Marcus G](https://github.com/mgdeveloper45)
+- [Seena Nadimi](https://github.com/seenanadimi)
 
 ## How to run project
 
@@ -15,33 +16,39 @@
 ## General UI Principles
 
 ### 1. Place users in control of the interface: Keep users in control makes them comfortable and want to use your site.
-* Make actions reversible
-* Create an easy-to-navigate interface (Provide visual cues/Predictability)
-* Provide informative feedback (Every action should have a clear reaction)
-* Show the visibility of system status (Countdown timer)
+
+- Make actions reversible
+- Create an easy-to-navigate interface (Provide visual cues/Predictability)
+- Provide informative feedback (Every action should have a clear reaction)
+- Show the visibility of system status (Countdown timer)
+
 ### 2. Make it comfortable for a user to interact with a product
-* Eliminate all elements that is irrelevant to your users experience
-* Don’t ask users for data they’ve already entered
-* Avoid jargon and system-oriented terminology (Use easy terms we all understand “buy” instead of “roost”)
-* Design large targets for important functions
-* Design accessible interfaces that try to accommodate for everyone
-* Use real world metaphors (ex. A trash bin to signify “delete” or “trash”)
-* Engineer for errors (Error messages to help guide user)
-* Protect a user’s work (Users should not lose their work due to an error)
+
+- Eliminate all elements that is irrelevant to your users experience
+- Don’t ask users for data they’ve already entered
+- Avoid jargon and system-oriented terminology (Use easy terms we all understand “buy” instead of “roost”)
+- Design large targets for important functions
+- Design accessible interfaces that try to accommodate for everyone
+- Use real world metaphors (ex. A trash bin to signify “delete” or “trash”)
+- Engineer for errors (Error messages to help guide user)
+- Protect a user’s work (Users should not lose their work due to an error)
+
 ### 3. Reduce the amount of mental processing power required to use a product
-* Chunking for sequences of international or actions (ex. Using indentations in phone numbers to help with a cluttered look. 5101234567 vs. (510)123-4567))
-* Reduce the number of actions require to complete a task (“KISS” - T.S.)
-* Recognition over recall (ex. Mail logo for e-mail instead of re-inventing the mail icon to be unique)
-* Promote visual Clarity (Less clutter, more contrasting colors, organization [rule of 3rds!!!])
+
+- Chunking for sequences of international or actions (ex. Using indentations in phone numbers to help with a cluttered look. 5101234567 vs. (510)123-4567))
+- Reduce the number of actions require to complete a task (“KISS” - T.S.)
+- Recognition over recall (ex. Mail logo for e-mail instead of re-inventing the mail icon to be unique)
+- Promote visual Clarity (Less clutter, more contrasting colors, organization [rule of 3rds!!!])
+
 ### 4. Make user interfaces consistent
-* Visual consistency [style] (Same colors, fonts, and icons should be present throughout the product)
-* Functional consistency [Behavior] Objects should work the same throughout the whole interface
-* Consistent with user expectations (Follow platform conventions. Don’t reinvent patterns. Don’t try to reinvent terminology)
+
+- Visual consistency [style] (Same colors, fonts, and icons should be present throughout the product)
+- Functional consistency [Behavior] Objects should work the same throughout the whole interface
+- Consistent with user expectations (Follow platform conventions. Don’t reinvent patterns. Don’t try to reinvent terminology)
 
 #### Source
+
 [The 4 Golden Rules of UI Design](https://xd.adobe.com/ideas/process/ui-design/4-golden-rules-ui-design/)
-
-
 
 ## The Gutenberg Diagram
 
@@ -52,6 +59,7 @@
 The pattern applies to text-heavy content (i.e. novels, newspaper)
 
 Gutenberg diagram divides layout into 4 quadrants
+
 - Primary optical area **TOP/LEFT**
 - Strong fallow area **TOP/RIGHT**
 - Weak fallow area **BOTTOM/LEFT**
@@ -63,7 +71,7 @@ Also suggested by the "Gutenberg diagram", the strong and weak fallow areas fall
 
 Important elements should be placed along this reading gravity path (ex Logo in top/left ,image in center of page, call to action(button or eye catcher), contact info in bottom right).
 
-"Naturally this is for left to right reading languages and would be reversed for right to left reading languages." This may be true however most of the research found below on this topic are done through the western lens. 
+"Naturally this is for left to right reading languages and would be reversed for right to left reading languages." This may be true however most of the research found below on this topic are done through the western lens.
 
 - [Designing for the Arab User](https://www.freecodecamp.org/news/designing-for-the-arab-user-basic-arabic-ux-for-business-6ff29d4c7c60/)
 
@@ -72,7 +80,6 @@ Important elements should be placed along this reading gravity path (ex Logo in 
 - [5 Differences Between Chinese and Western Website Design](https://www.nanjingmarketinggroup.com/blog/5-differences-chinese-western-website-design)
 
 - [How to adapt your UX for China](https://uxdesign.cc/how-to-adapt-your-ux-for-china-73f2ab789570)
-
 
 #### Source
 
@@ -84,7 +91,7 @@ Important elements should be placed along this reading gravity path (ex Logo in 
 
 ![z-pattern](http://www.vanseodesign.com/blog/wp-content/uploads/2011/02/writz-pattern.png)
 
-As the name describes you can assume the layout follows the shape of the letter Z. 
+As the name describes you can assume the layout follows the shape of the letter Z.
 
 Readers will start at the **top left**, go to the **top right**, followed a diagonal move to the **bottom left** and then finish at the **bottom right**.
 
@@ -98,13 +105,11 @@ The main difference between Gutenberg diagram is that the **Z-pattern** suggests
 
 [ex_3](https://miro.medium.com/max/4800/1*gSXy2vu8lzDbUvcrEScY9g.png) | [ex_4](https://miro.medium.com/max/4800/1*KqOIcVh1KQTkHZW0dAnLDw.png)
 
-
-### Zig-Zag Pattern ###
+### Zig-Zag Pattern
 
 We can extend the **Z-pattern** by doing a series of z-movements instead of one big z-movement.
 
 Naturally readers will continue to move to the right and then down back to the left and continue right repeating that over and over until we get to the bottom right or terminal area. This is refereed to a zig-zag pattern. This predictability allows designers to create layouts that allows for better readability and overall efficiency of use.
-
 
 ### Golden Triangle Pattern
 
@@ -124,19 +129,98 @@ The **Z-pattern** also leads to what's called as the golden triangle pattern. If
 
 [Figma Hierarchy](https://www.figma.com/resources/learn-design/hierarchy/)
 
+## F-Pattern Layout
+
+![F-Layout](http://www.vanseodesign.com/blog/wp-content/uploads/2011/02/writf-pattern.png)
+
+The f-pattern gets mentioned on the web and as you would expect the shape of the letter F.
+
+First suggested by Danish computer researcher Jakob Nielsen after intensive eye-tracking studies performed by his company. What usually gets lost in the f-pattern is that the original studies were heavy text designs, not geared for todays designs practices.
+
+"These scientific studies show that web surfers read the screen in an "F" pattern - seeing the top, upper left corner and left sides of the screen most... only occasionally taking glances towards the right side of the screen."
+
+Implications of the **F-pattern**:
+
+- **Users won't read your text thoroughly** in a word-by-word manner.
+- **People don’t read online. They scan.**
+- **The first two paragraphs must state the most important information.** In the case of todays designs with less text, revise this implication by putting your most important information towards the top and middle of the screen.
+- **Lesser information should be placed along the left edge** of the design often in bullet points where little horizontal eye movement is required to take everything in.
+- **Start subheads, paragraphs, and bullet points with information-carrying words** that users will notice when scanning down the left side of your content in the final stem of their F-behavior. They'll read the third word on a line much less often than the first two words.
+
+#### IMG Example
+
+![Eye tracking](https://media.nngroup.com/media/editor/2019/09/04/f_reading_pattern_eyetracking_nngroup.jpg)
+
+[F-Layout Example](https://miro.medium.com/max/700/0*dxrI1sh1-65o0Vqb.png)
+
+[]()
+
+[]()
+
+Remember most of these implications were made in the 90s. Which means a lot of these have been revised or done away with completely. This leads into another topic of interest:
+
+### The Fold Manifesto
+
+Screen sizes constantly change and designs have to respond to these changes. The term "above the fold" is a term borrowed from print-newspaper terminology but does it still hold up today?
+
+Amy Schade of Nielsen Norman Group (the same Nielson Norman Group who did intensive eye-tracking research) says it still applies to today.
+
+"**The fold still exists and still applies.**" says Amy. "Even though the location of the fold will differ between deceives, it exists for every single user on every single screen"
+
+From a technical standpoint, the fold for common device sizes can be determined by looking at web traffic and at device and browser statistics.
+
+More than a measurement the fold is a concept. The fold matter because what appears at the top of your page matters. Users scroll but only if it is promising enough.
+
+It’s a simple matter of interaction cost:
+
+- Visi​ble without further action (i.e., above the fold) = low interaction cost to view
+- Invisible and requiring an action to be made visible (i.e., below the fold, or otherwise hidden) = higher interaction cost, consisting of (a) the mental effort of guessing that something is hidden and having to make the positive decision to reveal the content, and (b) the physical effort of doing what is required to see the content (e.g., scrolling the page).
+
+#### Encourage Scrolling
+
+Webpage design and user activity has evolved so much that designers have to design to encourage people to scroll.
+
+When pages offer little content its difficult for users to know what else is available on a page. It may make for an attractive page, but that may come at the cost of discouraging users from scrolling. Designs like this create a "false floor" that makes users think they've seen the full page of content.
+
+Examples below show how designers attempt to break that "false floor"
+
+![ex_1](https://s3.amazonaws.com/media.nngroup.com/media/editor/2015/01/29/modnotebooks_homepage.png)
+
+![ex_2](https://s3.amazonaws.com/media.nngroup.com/media/editor/2015/01/29/modnotebooks_scroll.png)
+
+#### Supporting these claims
+
+To be able to support this claim research was added:
+
+"in an analysis of 57,453 eye tracking fixations, we found that there was a dramatic drop-off in user attention at the position of the page fold. Elements above the fold were seen more than elements below the fold: the 100 pixels just above the fold were viewed 102% more than the 100 pixels just below the fold."
+
+This heatmap below shows this analysis:
+
+![Heatmap](https://s3.amazonaws.com/media.nngroup.com/media/editor/2015/01/29/aggregate-heatmap-all-non-search-pageviews_1.png)
+
+#### Source
+
+[Nielsen Norman Group - (The Fold Manifesto)](https://www.nngroup.com/articles/page-fold-manifesto/)
+
+[Nielsen Norman Group - (original study - 2006)](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)
+
+[Nielsen Norman Group (revisited topic - 2017)](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/)
+
+[3 Design Layouts](https://vanseodesign.com/web-design/3-design-layouts/)
+
 ## Neumorphism / Soft UI
 
-Soft UI aka Neumorphism means using shadows and highlights to make shapes appear as though they are slightly extruded. It gets its name from a term called “skeuomorphism, which we will talk about later. It brings back some almost retro 3D styling to the more modern Flat UI. 
+Soft UI aka Neumorphism means using shadows and highlights to make shapes appear as though they are slightly extruded. It gets its name from a term called “skeuomorphism, which we will talk about later. It brings back some almost retro 3D styling to the more modern Flat UI.
 
 IMAGE
 
 Neumorphism UI elements look like they’re connected to the background, as if the elements are extruded from the background or inset into the background. They’ve been described by some as “Soft UI” because of the way soft shadows are used to create the effect. IMAGE
 
-Another way to understand Neumorphism UI is to compare it to Material Design. An example is to use a regular card component to draw a distinction between the two. 
+Another way to understand Neumorphism UI is to compare it to Material Design. An example is to use a regular card component to draw a distinction between the two.
 
 IMAGE
 
-A core part of Neumorphism elements is the use of two shadows: a light shadow and a dark shadow. That’s how we get that sort of “raised” effect and we can create variations by changing the “light source” of the shadows. 
+A core part of Neumorphism elements is the use of two shadows: a light shadow and a dark shadow. That’s how we get that sort of “raised” effect and we can create variations by changing the “light source” of the shadows.
 
 IMAGE
 
@@ -145,7 +229,7 @@ box-shadow: 20px 20px 50px #00D2C6,
       	   -30px -30px 60px #00FFFF;
 ```
 
-The main characteristic of a Neumorphism interface is that it blends with the background and does so by having a similar or same background color as the underlying element. 
+The main characteristic of a Neumorphism interface is that it blends with the background and does so by having a similar or same background color as the underlying element.
 
 IMAGE
 
@@ -159,29 +243,29 @@ Neumorphic elements also take more space (inside padding and outside margin) due
 
 The ideal element for Neumorphism are cards, or any other static container element that doesn’t have states based on user interaction.
 
-#### Source 
+#### Source
+
 [Neumorphism and CSS](https://css-tricks.com/neumorphism-and-css/)
 
 [Soft UI Neumorphism in Adobe XD](https://uxdesign.cc/create-soft-ui-neumorphism-in-adobe-xd-bc08bb4cb79d)
 
-
 ## Skeuomorphism
 
-Skeuomorphism is a term most often used in graphical user interface design to describe interface objects that mimic their real-world counterparts in how they appear and/or how the user can interact with them. A well-known example is the recycle bin icon used for discarding files. 
+Skeuomorphism is a term most often used in graphical user interface design to describe interface objects that mimic their real-world counterparts in how they appear and/or how the user can interact with them. A well-known example is the recycle bin icon used for discarding files.
 
 IMAGE(trash can)
 
-The idea was simple; computer interfaces would be much more intuitive to users if skeuomorphic design was applied. 
+The idea was simple; computer interfaces would be much more intuitive to users if skeuomorphic design was applied.
 
 Skeuomorphism makes interface objects familiar to users by using concepts they recognize.
 
-Skeuomorphism’s use made interfaces more familiar and easier to use. Apple’s mobile operating system, iOS, used skeuomorphism heavily across its user interface (e.g., buttons resembling glossy ‘real’ buttons, photos with white borders looking like physical photographs, etc.). 
+Skeuomorphism’s use made interfaces more familiar and easier to use. Apple’s mobile operating system, iOS, used skeuomorphism heavily across its user interface (e.g., buttons resembling glossy ‘real’ buttons, photos with white borders looking like physical photographs, etc.).
 
 IMAGE(apple applications)
 
 Downsides to Skeuomorphism: skeuomorphic design led to huge amounts of clutter on the desktop. They brought too many useless details to our computers which we no longer needed.
 
-Critics of skeuomorphism argue that designers created theatrics instead of experiences. An example would be the iPad’s version of an e-reader: 
+Critics of skeuomorphism argue that designers created theatrics instead of experiences. An example would be the iPad’s version of an e-reader:
 
 IMAGE
 
@@ -191,11 +275,11 @@ For critics, skeuomorphic design sacrificed ease of use, interface scalability, 
 
 In response, the design community moved towards flatter, more ambiguous and standardized design styles.
 
-The Big Comeback: And now we have the digitalization of things from watches, to cars, and appliances. 
+The Big Comeback: And now we have the digitalization of things from watches, to cars, and appliances.
 
 The internet of things (IoT) is bringing skeuomorphic design back into the forefront of design thinking.
 
-Instead of interacting with a flat surface, like a phone or tablet screen, users are now digitally interacting with more real world objects. 
+Instead of interacting with a flat surface, like a phone or tablet screen, users are now digitally interacting with more real world objects.
 
 IMAGE(Apple Watch)
 
@@ -209,5 +293,4 @@ Skeuomorphism is more important than ever, but it has to adapt. We can no longer
 
 [Skeuomorphism Design](https://medium.muz.li/skeuomorphic-design-a-controversial-ux-approach-that-is-making-a-comeback-a0b6e93eb4bb)
 
-[Skeuomorphism](https://www.interaction-design.org/literature/topics/skeuomorphism)                                                        
-
+[Skeuomorphism](https://www.interaction-design.org/literature/topics/skeuomorphism)
