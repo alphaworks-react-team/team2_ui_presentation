@@ -6,7 +6,7 @@
 
 ## How to run project
 
-- Git clone 
+- run `git clone git@github.com:alphaworks-react-team/team2_ui_presentation.git`
 - run `npm install` in project directory
 - run `npm start`
 
