@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Glassmorphism = () => {
+const Flatdesign = () => {
   const styles = {
     container: {
       margin: 'auto',
@@ -13,40 +13,47 @@ const Glassmorphism = () => {
       justifyContent: 'space-around',
       alignItems: 'center',
     },
-    basic: {
+    main: {
       width: '20vw',
       height: '60vh',
-      background: 'rgba(255,255,255,.4)',
+      background: 'grey',
       position: 'relative',
       borderRadius: '10px',
-      border: '1px solid rgba(255,255,255,.2)',
-      backdropFilter: 'blur(4px)',
       display: 'flex',
       flexWrap: 'wrap',
       justifyContent: 'space-around',
       alignItems: 'center',
     },
-    blur: {
+    box: {
       position: 'absolute',
       top: '2vh',
       width: '150px',
       height: '150px',
-      background: 'rgba(255,255,255,.4)',
-      backdropFilter: 'blur(0px)',
-      borderRadius: '10px',
-      border: '1px solid rgba(255,255,255,.2)',
+      background: 'black',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-around',
       alignItems: 'center',
+      color: 'white',
+    },
+    btn: {
+      // position: 'absolute',
+      // top: '2vh',
+      width: '150px',
+      height: '50px',
+      background: 'orange',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-around',
+      alignItems: 'center',
+      border: 'none',
     },
     icon: {},
   };
-
   return (
     <div style={styles.container}>
-      <div style={styles.basic}>
-        <div style={styles.blur}>
+      <div style={styles.main}>
+        <div style={styles.box}>
           <img src='https://img.icons8.com/fluent/48/000000/cloud.png' />
           <p>65°C</p>
           <p>Oakland, CA</p>
@@ -57,22 +64,10 @@ const Glassmorphism = () => {
           praesentium ullam enim, culpa blanditiis ducimus consequuntur,
           repellat dolor ut impedit nemo.
         </p>
-        <button>Get Started</button>
+        <button style={styles.btn}>Get Started</button>
       </div>
-      {/* <div style={styles.blur}>
-          <img src="https://img.icons8.com/fluent/48/000000/cloud.png" />
-          <p>80°C</p>
-          <p>Los Angelos , CA</p>
-        </div>
-        <div style={styles.blur}>
-          <img src="https://img.icons8.com/fluent/48/000000/cloud.png" />
-          <p>65°C</p>
-          <p>San Francisco, CA</p>
-        </div> */}
-      {/* <div style={styles.basic}></div>
-      <div style={styles.basic}></div> */}
     </div>
   );
 };
 
-export default Glassmorphism;
+export default Flatdesign;
