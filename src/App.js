@@ -5,7 +5,8 @@ import FlatCard from "./Components/Flatcard";
 import Nav from "./Components/Nav.js";
 import Main from "./Components/Main.js";
 import Footer from "./Components/Footer.js";
-import Neumorphism from "./Components/Neumorphism.js"
+import Neumorphism from "./Components/Neumorphism.js";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   const styles = {
@@ -13,18 +14,24 @@ function App() {
     backgroundImage: `url(https://res.cloudinary.com/practicaldev/image/fetch/s--_MCEk7P6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/vm957e5dm3hxnwc94dd7.jpg)`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    
   };
 
   return (
     <div className="App" style={styles}>
       <Nav />
-      <Main>
-        <Neumorphism />
-        <Glassmorphism />
-        <Flatdesign />
-        <FlatCard />
-      </Main>
+      <Switch>
+        <Route path="/main" exact component={Main} />
+        <Route path="/glassmorphism" exact component={Glassmorphism} />
+        <Route path="/flat" exact component={Main} />
+        <Route path="/" exact component={Main} />
+        <Route path="/" exact component={Main} />
+        {/* <Main>
+          <Neumorphism />
+          <Glassmorphism />
+          <Flatdesign />
+          <FlatCard />
+        </Main>{" "} */}
+      </Switch>
       <Footer />
     </div>
   );
