@@ -7,6 +7,8 @@ const Footer = () => {
       height: "10vh",
       display: "flex",
       justifyContent: "space-evenly",
+      backgroundColor: "white",
+      alignItems: "center",
     },
   };
 

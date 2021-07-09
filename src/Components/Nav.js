@@ -12,6 +12,9 @@ const Nav = () => {
       width: "50%",
       height: "100%",
       marginLeft: "20px",
+      display: "flex",
+      justifyContent: "flex-start",
+      alignItems: "center",
     },
     nav: {
       width: "50%",
@@ -20,8 +23,6 @@ const Nav = () => {
       justifyContent: "space-evenly",
       alignItems: "center",
     },
-    
-    
   };
 
   return (

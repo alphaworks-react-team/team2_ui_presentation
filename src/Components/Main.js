@@ -3,9 +3,11 @@ import React from 'react'
 const Main = (props) => {
   const styles = {
     display: "flex",
+    flexFlow: "wrap row",
     alignItems: "center",
+    
     width: "100%",
-    height: "90vh",
+    minHeight: "80vh",
   };
 
   return (
