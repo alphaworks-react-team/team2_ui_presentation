@@ -4,8 +4,8 @@ const Main = (props) => {
   const styles = {
     display: "flex",
     flexFlow: "wrap row",
+    justifyContent:"space-around",
     alignItems: "center",
-    
     width: "100%",
     minHeight: "80vh",
   };

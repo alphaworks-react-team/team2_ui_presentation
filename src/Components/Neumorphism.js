@@ -1,7 +1,7 @@
 import React from 'react'
-import boogie from '../../image/boogie_board.jpeg'
-import menu from '../../image/menu.png'
-import arrow from '../../image/big-left-arrow.png'
+import boogie from '../image/boogie_board.jpeg'
+import menu from '../image/menu.png'
+import arrow from '../image/big-left-arrow.png'
 
 const Neumorphism = () => {
     const styles = {
@@ -14,16 +14,16 @@ const Neumorphism = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "rgb(179, 231, 255)",
+            // backgroundColor: "rgb(179, 231, 255)",
             height: "80vh",
-            width: "40vw",
+            // width: "40vw",
         },
         imageLeft: {
             backgroundColor: "rgb(179, 231, 255)",
             boxShadow: "25px 25px 39px 0 rgba(77, 198, 255, 0.25), -10px -10px 18px 0 rgb(204, 239, 255)",
             
             padding: "5px",
-            borderRadius: "5%",
+            borderRadius: "10px",
             height: "65vh",
             width: "15vw",
         },
@@ -113,7 +113,7 @@ const Neumorphism = () => {
                         </div>
                     </div> 
                 </div>
-                <div className="rightside" style={styles.rightside}></div>
+                {/* <div className="rightside" style={styles.rightside}></div> */}
             </div>
         </div>
     )

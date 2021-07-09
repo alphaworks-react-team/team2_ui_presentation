@@ -3,7 +3,7 @@ import React from "react";
 const Glassmorphism = () => {
   const styles = {
     container: {
-      margin: "auto",
+     
       // width: "90%",
       height: "80vh",
       // backgroundImage: `url("https://i.pinimg.com/originals/db/1d/d2/db1dd2566264bd67962dd9bb5fd65644.jpg")`,
