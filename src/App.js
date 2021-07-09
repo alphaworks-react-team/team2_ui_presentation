@@ -1,3 +1,4 @@
+import Neumorphism from "./components/Neumorphism/Neumorphism";
 import "./App.css";
 import Glassmorphism from "./Components/Glassmorphism";
 import Flatdesign from "./Components/Flatdesign"
@@ -22,6 +23,7 @@ function App() {
     <div className="App" style={styles}>
       <Nav />
       <Main>
+        <Neumorphism />
         <Glassmorphism />
         <Flatdesign />
         <Flatcard />
