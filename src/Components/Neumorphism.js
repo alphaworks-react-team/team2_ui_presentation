@@ -23,7 +23,7 @@ const Neumorphism = () => {
             boxShadow: "25px 25px 39px 0 rgba(77, 198, 255, 0.25), -10px -10px 18px 0 rgb(204, 239, 255)",
             
             padding: "5px",
-            borderRadius: "10px",
+            borderRadius: "25px",
             height: "65vh",
             width: "15vw",
         },
