@@ -1,4 +1,3 @@
-import Neumorphism from "./components/Neumorphism/Neumorphism";
 import "./App.css";
 import Glassmorphism from "./Components/Glassmorphism";
 import Flatdesign from "./Components/Flatdesign";
@@ -6,6 +5,7 @@ import FlatCard from "./Components/Flatcard";
 import Nav from "./Components/Nav.js";
 import Main from "./Components/Main.js";
 import Footer from "./Components/Footer.js";
+// import Neumorphism from "./Components/Neumorphism.js"
 
 function App() {
   const styles = {
@@ -21,7 +21,6 @@ function App() {
     <div className="App" style={styles}>
       <Nav />
       <Main>
-        <Neumorphism />
         <Glassmorphism />
         <Flatdesign />
         <FlatCard />
