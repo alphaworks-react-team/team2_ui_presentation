@@ -1,5 +1,4 @@
 ## Contributors
-//hello
 
 - [Ari Agress](https://github.com/ariagress)
 - [Franco Phan](https://github.com/Frank-5850)
