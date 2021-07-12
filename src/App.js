@@ -1,8 +1,8 @@
-import Neumorphism from "./components/Neumorphism/Neumorphism";
+import Neumorphism from "./Components/Neumorphism";
 import "./App.css";
 import Glassmorphism from "./Components/Glassmorphism";
-import Flatdesign from "./Components/Flatdesign"
-import Flatcard from "./Components/Flatcard"
+import Flatdesign from "./Components/Flatdesign";
+import Flatcard from "./Components/Flatcard";
 import Nav from "./Components/Nav.js";
 import Main from "./Components/Main.js";
 
@@ -14,9 +14,6 @@ function App() {
     backgroundColor: "lightgrey",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    
-
-
   };
 
   return (

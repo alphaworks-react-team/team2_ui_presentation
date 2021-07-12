@@ -58,7 +58,7 @@ const Glassmorphism = () => {
     <div style={styles.container}>
       <div style={styles.basic}>
         <div style={styles.blur}>
-          <img src="https://img.icons8.com/fluent/48/000000/cloud.png" />
+          <img src="https://img.icons8.com/fluent/48/000000/cloud.png" alt="fluent"/>
           <p>65°C</p>
           <p>Oakland, CA</p>
         </div>
