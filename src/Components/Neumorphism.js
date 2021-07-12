@@ -1,5 +1,5 @@
 import React from 'react'
-import boogie from '../image/boogie_board.jpeg'
+import drake from '../image/drake.jpeg'
 import menu from '../image/menu.png'
 import arrow from '../image/big-left-arrow.png'
 import rewind from '../image/clear-rewind.png'
@@ -71,7 +71,7 @@ const Neumorphism = () => {
             alignItems: "center",
         },
         artistImage: {
-            backgroundImage: `url(${boogie})`,
+            backgroundImage: `url(${drake})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
