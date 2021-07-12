@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="App" style={styles}>
+    <div className='App' style={styles}>
       <Nav />
       <Switch>
         <Route path="/main" exact component={Main} />
