@@ -40,8 +40,8 @@ const Flatdesign = () => {
       justifyContent: 'space-around',
       alignItems: 'center',
       title: {
-      margin: "0",
-      color: "white",
+        margin: '0',
+        color: 'white',
       },
     },
     btn: {

@@ -1,5 +1,5 @@
 import React from 'react';
-import arrow from '../image/big-left-arrow.png'
+import arrow from '../image/big-left-arrow.png';
 
 const FlatCard = () => {
   const styles = {
