@@ -7,6 +7,10 @@ import Main from "./Components/Main.js";
 import Footer from "./Components/Footer.js";
 import Neumorphism from "./Components/Neumorphism.js";
 import { Route, Switch } from "react-router-dom";
+import MaterialCard from "./Components/Material.js";
+
+
+
 
 function App() {
   const styles = {
@@ -22,8 +26,8 @@ function App() {
       <Switch>
         <Route path="/main" exact component={Main} />
         <Route path="/glassmorphism" exact component={Glassmorphism} />
-        <Route path="/flat" exact component={Main} />
-        <Route path="/" exact component={Main} />
+        <Route path="/flat" exact component={FlatCard} />
+        <Route path="/material" exact component={MaterialCard} />
         <Route path="/" exact component={Main} />
         {/* <Main>
           <Neumorphism />
