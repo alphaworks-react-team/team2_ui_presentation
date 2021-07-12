@@ -26,7 +26,7 @@ const Neumorphism = () => {
             padding: "5px",
             border: "solid 1px #ed4575",
             borderRadius: "25px",
-            height: "70vh",
+            height: "75vh",
             width: "15vw",
         },
        
@@ -171,7 +171,7 @@ const Neumorphism = () => {
             backgroundPosition: "center",
             border: "solid 2px #333333",
             borderRadius: "45px",
-            height: "70vh",
+            height: "75vh",
             width: "17vw",
         },
     }
