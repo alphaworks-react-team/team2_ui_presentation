@@ -17,14 +17,14 @@ function App() {
   };
 
   return (
-    <div className="App" style={styles}>
+    <div className='App' style={styles}>
       <Nav />
       <Switch>
-        <Route path="/main" exact component={Main} />
-        <Route path="/glassmorphism" exact component={Glassmorphism} />
-        <Route path="/flat" exact component={Main} />
-        <Route path="/" exact component={Main} />
-        <Route path="/" exact component={Main} />
+        <Route path='/main' exact component={Main} />
+        <Route path='/glassmorphism' exact component={Glassmorphism} />
+        <Route path='/flat' exact component={Main} />
+        <Route path='/material' exact component={Main} />
+        <Route path='/' exact component={Main} />
         {/* <Main>
           <Neumorphism />
           <Glassmorphism />
