@@ -53,7 +53,7 @@ const Nav = () => {
         <Link style={styles.nav.navItems}>
           <p onClick={() => history.push("/glassmorphism")}> Glassmorphism</p>
           <p onClick={() => history.push("/flat")}>Flat</p>
-          <p onClick={() => history.push("/Material")}>Material</p>
+          <p onClick={() => history.push("/material")}>Material</p>
           <p onClick={() => history.push("/flayout")}>F-Layout</p>
         </Link>
       </div>
