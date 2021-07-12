@@ -1,12 +1,16 @@
-import './App.css';
-import Glassmorphism from './Components/Glassmorphism';
-import Flatdesign from './Components/Flatdesign';
-import FlatCard from './Components/Flatcard';
-import Nav from './Components/Nav.js';
-import Main from './Components/Main.js';
-import Footer from './Components/Footer.js';
-import Neumorphism from './Components/Neumorphism.js';
-import { Route, Switch } from 'react-router-dom';
+import "./App.css";
+import Glassmorphism from "./Components/Glassmorphism";
+import Flatdesign from "./Components/Flatdesign";
+import FlatCard from "./Components/Flatcard";
+import Nav from "./Components/Nav.js";
+import Main from "./Components/Main.js";
+import Footer from "./Components/Footer.js";
+import Neumorphism from "./Components/Neumorphism.js";
+import { Route, Switch } from "react-router-dom";
+import MaterialCard from "./Components/Material.js";
+
+
+
 
 function App() {
   const styles = {
@@ -20,11 +24,11 @@ function App() {
     <div className='App' style={styles}>
       <Nav />
       <Switch>
-        <Route path='/main' exact component={Main} />
-        <Route path='/glassmorphism' exact component={Glassmorphism} />
-        <Route path='/flat' exact component={Main} />
-        <Route path='/material' exact component={Main} />
-        <Route path='/' exact component={Main} />
+        <Route path="/main" exact component={Main} />
+        <Route path="/glassmorphism" exact component={Glassmorphism} />
+        <Route path="/flat" exact component={FlatCard} />
+        <Route path="/material" exact component={MaterialCard} />
+        <Route path="/" exact component={Main} />
         {/* <Main>
           <Neumorphism />
           <Glassmorphism />
