@@ -33,7 +33,7 @@ const Thirds = () => {
     },
     main: {
       width: "95%",
-      height: "500px",
+      height: "95%",
       backgroundImage: `url(${bay})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
@@ -57,6 +57,17 @@ const Thirds = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      rightArrow: {
+        color: "white",
+        fontSize: "30px",
+        fontWeight: "bold",
+      },
+      leftArrow: {
+        color: "white",
+        fontSize: "30px",
+        fontWeight: "bold",
+        transform: "rotate(180deg)",
+      },
       // position: "absolute",
     },
     cardWrapper: {
@@ -86,41 +97,44 @@ const Thirds = () => {
       alignItems: "center",
     },
     city: {
-      width: "450px",
-      height: "252px",
+      width: "90%",
+      height: "90%",
       backgroundImage: `url(${frisco})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       backgroundSize: "cover",
     },
     frisco: {
-      width: "450px",
-      height: "252px",
+      width: "90%",
+      height: "90%",
       backgroundImage: `url(${bay})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       backgroundSize: "cover",
     },
     morman: {
-      width: "450px",
-      height: "252px",
+      width: "90%",
+      height: "90%",
       backgroundImage: `url(${morman})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
+      backgroundSize: "cover",
     },
   };
 
   return (
     <div style={styles.layout}>
       <div style={styles.mainWrapper}>
-        <div style={styles.arrowIcons}></div>
+        <div style={styles.arrowIcons}>
+          <p style={styles.arrowIcons.leftArrow}>></p>
+        </div>
         <div style={styles.mainBorder}>
           <div style={styles.main}>
             <p style={styles.text}>A photograph is the pause button of life</p>
           </div>
         </div>
         <div style={styles.arrowIcons}>
-          <i className="fas fa-arrow-circle-right"></i>
+          <p style={styles.arrowIcons.rightArrow}>></p>
         </div>
         {/* <div style={styles.mainBorder}></div> */}
         {/* <div style={styles.mainBorder}></div> */}

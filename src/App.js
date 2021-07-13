@@ -22,7 +22,7 @@ function App() {
     <div className="App" style={styles}>
       <Nav />
       <Switch>
-        <Route path="/main" exact component={Main} />
+        <Route path="/" exact component={Main} />
         <Route path="/glassmorphism" exact component={Glassmorphism} />
         <Route path="/flat" exact component={FlatCard} />
         <Route path="/material" exact component={MaterialCard} />
