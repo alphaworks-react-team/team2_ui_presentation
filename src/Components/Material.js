@@ -1,8 +1,6 @@
-import React from 'react'
+import React from "react";
 
 const materialCard = () => {
-
-
   const styles = {
     wrap: {
       height: "80vh",
@@ -13,6 +11,7 @@ const materialCard = () => {
       alignItems: "center",
     },
     card: {
+      maxHeight: "100%",
       height: "500px",
       width: "400px",
       backgroundColor: "red",
@@ -26,20 +25,18 @@ const materialCard = () => {
       height: "50%",
       width: "100%",
       backgroundColor: "green",
-    }
+    },
   };
   //test push
-  
-  
-  
+
   return (
     <div style={styles.wrap}>
-        <div style={styles.card}>
-          <div style={styles.photo}></div>
-          <div style={styles.text}></div>
-        </div>
+      <div style={styles.card}>
+        <div style={styles.photo}></div>
+        <div style={styles.text}></div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default materialCard
+export default materialCard;
