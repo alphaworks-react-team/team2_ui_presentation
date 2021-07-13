@@ -1,8 +1,7 @@
-import React from 'react'
+import React from "react";
+import { GoPlus } from "react-icons/go";
 
 const MaterialButtonWrap = () => {
-
-
   const styles = {
     wrap: {
       height: "80vh",
@@ -65,12 +64,29 @@ const MaterialButtonWrap = () => {
       height: "auto",
       padding: "10px",
       cursor: "pointer",
-      boxShadow: ""
+    },
+    button_4: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      alignContent: "center",
+      fontWeight: "700",
+      border: "none",
+      borderRadius: "4px",
+      backgroundColor: "#6301EE",
+      color: "white",
+      maxWidth: "75%",
+      maxHeight: "50%",
+      width: "75%",
+      height: "auto",
+      padding: "10px",
+      cursor: "pointer",
+    },
+    plusSign: {
+      marginRight: "10px",
     },
   };
-  
-  
-  
+
   return (
     <div style={styles.wrap}>
       <div style={styles.container}>
@@ -84,11 +100,14 @@ const MaterialButtonWrap = () => {
           <button style={styles.button_3}>BUTTON</button>
         </div>
         <div style={styles.box_1}>
-          <button style={styles.button_4}>BUTTON</button>
+          <button style={styles.button_4}>
+            <GoPlus  style={styles.plusSign}/>
+            BUTTON
+          </button>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default MaterialButtonWrap;
