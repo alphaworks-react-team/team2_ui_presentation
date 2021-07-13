@@ -1,5 +1,7 @@
 import React from 'react';
-import arrow from '../image/big-left-arrow.png';
+import arrow_l from '../image/leftarrowari.png';
+import arrow_r from '../image/rightarrowari.png';
+import heart from '../image/heartari.png';
 
 const FlatCard = () => {
   const styles = {
@@ -10,8 +12,9 @@ const FlatCard = () => {
       alignItems: 'center',
     },
     main: {
-      width: '30vw',
-      height: '60vh',
+      maxHeight: '100%',
+      width: '400px',
+      height: '650px',
       background: 'white',
       borderRadius: '20px',
       display: 'flex',
@@ -21,8 +24,9 @@ const FlatCard = () => {
       position: 'relative',
     },
     description: {
-      width: '30vw',
-      height: '35vh',
+      maxHeight: '100%',
+      width: '400px',
+      height: '350px',
       backgroundImage: `url("https://picsum.photos/600")`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
@@ -31,8 +35,9 @@ const FlatCard = () => {
       // borderBottomRightRadius: '40px',
     },
     body: {
-      width: '30vw',
-      height: '15vh',
+      maxHeight: '100%',
+      width: '400px',
+      height: '200px',
       // borderTopLeftRadius: '40px',
       background: 'grey',
       display: 'flex',
@@ -41,30 +46,52 @@ const FlatCard = () => {
       content: {
         width: '80%',
         height: '100%',
-        marginTop: '50px',
+        marginTop: '70px',
       },
     },
     button: {
-      width: '30vw',
-      height: '10vh',
+      maxHeight: '100%',
+      width: '400px',
+      height: '100px',
       background: 'grey',
       borderBottomLeftRadius: '20px',
       borderBottomRightRadius: '20px',
       display: 'flex',
-      justifyContent: 'flex-start',
+      justifyContent: 'space-around',
       alignItems: 'center',
     },
-    btn: {
-      width: '50px',
-      height: '50px',
-      backgroundImage: `url(${arrow})`,
+    btn1: {
+      width: '60px',
+      height: '60px',
+      backgroundImage: `url(${arrow_l})`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       backgroundSize: '25px 25px',
       backgroundColor: 'orange',
       borderRadius: '50px',
       border: 'none',
-      marginLeft: '40px',
+    },
+    btn2: {
+      width: '50px',
+      height: '50px',
+      backgroundImage: `url(${heart})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: '25px 25px',
+      backgroundColor: 'orange',
+      borderRadius: '50px',
+      border: 'none',
+    },
+    btn3: {
+      width: '60px',
+      height: '60px',
+      backgroundImage: `url(${arrow_r})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: '25px 25px',
+      backgroundColor: 'orange',
+      borderRadius: '50px',
+      border: 'none',
     },
   };
   return (
@@ -80,7 +107,9 @@ const FlatCard = () => {
           </div>
         </div>
         <div style={styles.button}>
-          <button style={styles.btn}></button>
+          <button style={styles.btn1}></button>
+          <button style={styles.btn2}></button>
+          <button style={styles.btn3}></button>
         </div>
       </div>
     </div>

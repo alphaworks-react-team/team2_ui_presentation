@@ -63,7 +63,10 @@ const Flatdesign = () => {
     <div style={styles.container}>
       <div style={styles.main}>
         <div style={styles.box}>
-          <img src='https://img.icons8.com/fluent/48/000000/cloud.png' alt="fluent"/>
+          <img
+            src='https://img.icons8.com/fluent/48/000000/cloud.png'
+            alt='fluent'
+          />
           <p>65°C</p>
           <p>Oakland, CA</p>
         </div>
