@@ -1,5 +1,4 @@
 import React from "react";
-// import cityhall from "../image/CityHall.jpg";
 import frisco from "../image/Frisco.jpg";
 import morman from "../image/MormanTemple.jpg";
 import bay from "../image/baybridge.jpg";
@@ -32,20 +31,32 @@ const Thirds = () => {
       // position: "absolute",
     },
     main: {
-      width: "95%",
+      width: "97%",
       height: "95%",
       backgroundImage: `url(${bay})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       backgroundSize: "cover",
       position: "absolute",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
     },
     text: {
-      marginTop: "7%",
-      marginLeft: "3%",
-      width: "20%",
+      margin: "0",
+      marginTop: "11%",
+      marginLeft: "30%",
+      width: "53.3%",
       color: "white",
-      fontSize: "50px",
+      fontSize: "30px",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      fontFamily: "Segoe Script",
+    },
+    life: {
+      margin: "0",
+      fontFamily: "Segoe Script",
     },
     arrowIcons: {
       width: "40px",
@@ -58,15 +69,19 @@ const Thirds = () => {
       justifyContent: "center",
       alignItems: "center",
       rightArrow: {
+        margin: "0",
         color: "white",
         fontSize: "30px",
         fontWeight: "bold",
+        cursor: "pointer",
       },
       leftArrow: {
+        margin: "0",
         color: "white",
         fontSize: "30px",
         fontWeight: "bold",
         transform: "rotate(180deg)",
+        cursor: "pointer",
       },
       // position: "absolute",
     },
@@ -130,7 +145,10 @@ const Thirds = () => {
         </div>
         <div style={styles.mainBorder}>
           <div style={styles.main}>
-            <p style={styles.text}>A photograph is the pause button of life</p>
+            <p style={styles.text}>
+              A photograph is the pause button of life
+              {/* <p style={styles.life}>life</p> */}
+            </p>
           </div>
         </div>
         <div style={styles.arrowIcons}>
