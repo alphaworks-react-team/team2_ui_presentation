@@ -57,6 +57,17 @@ const Thirds = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      rightArrow: {
+        color: "white",
+        fontSize: "30px",
+        fontWeight: "bold",
+      },
+      leftArrow: {
+        color: "white",
+        fontSize: "30px",
+        fontWeight: "bold",
+        transform: "rotate(180deg)",
+      },
       // position: "absolute",
     },
     cardWrapper: {
@@ -114,14 +125,16 @@ const Thirds = () => {
   return (
     <div style={styles.layout}>
       <div style={styles.mainWrapper}>
-        <div style={styles.arrowIcons}></div>
+        <div style={styles.arrowIcons}>
+          <p style={styles.arrowIcons.leftArrow}>></p>
+        </div>
         <div style={styles.mainBorder}>
           <div style={styles.main}>
             <p style={styles.text}>A photograph is the pause button of life</p>
           </div>
         </div>
         <div style={styles.arrowIcons}>
-          <p>></p>
+          <p style={styles.arrowIcons.rightArrow}>></p>
         </div>
         {/* <div style={styles.mainBorder}></div> */}
         {/* <div style={styles.mainBorder}></div> */}
