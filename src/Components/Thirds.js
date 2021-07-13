@@ -58,7 +58,7 @@ const Thirds = () => {
       margin: "0",
       fontFamily: "Segoe Script",
     },
-    arrowIcons: {
+    arrowBorder: {
       width: "40px",
       height: "40px",
       background: "rgba(255,255,255,.4)",
@@ -68,22 +68,11 @@ const Thirds = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      // rightArrow: {
-      //   margin: "0",
-      //   color: "white",
-      //   fontSize: "30px",
-      //   fontWeight: "bold",
-      //   cursor: "pointer",
-      // },
-      leftArrow: {
-        margin: "0",
+      icons: {
+        width: "80%",
+        height: "80%",
         color: "white",
-        fontSize: "30px",
-        fontWeight: "bold",
-        transform: "rotate(180deg)",
-        cursor: "pointer",
       },
-      // position: "absolute",
     },
     cardWrapper: {
       display: "flex",
@@ -140,8 +129,8 @@ const Thirds = () => {
   return (
     <div style={styles.layout}>
       <div style={styles.mainWrapper}>
-        <div style={styles.arrowIcons}>
-          <p style={styles.arrowIcons.leftArrow}>></p>
+        <div style={styles.arrowBorder}>
+          <FaAngleLeft style={styles.arrowBorder.icons} />
         </div>
         <div style={styles.mainBorder}>
           <div style={styles.main}>
@@ -151,10 +140,8 @@ const Thirds = () => {
             </p>
           </div>
         </div>
-        <div style={styles.arrowIcons}>
-          <p style={styles.arrowIcons.rightArrow}>
-            <FaAngleRight />
-          </p>
+        <div style={styles.arrowBorder}>
+          <FaAngleRight style={styles.arrowBorder.icons} />
         </div>
         {/* <div style={styles.mainBorder}></div> */}
         {/* <div style={styles.mainBorder}></div> */}
