@@ -8,14 +8,20 @@ const Main = () => {
   const styles = {
     display: "flex",
     flexFlow: "wrap row",
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: "space-between",
+    alignItems: "space-between",
     width: "100%",
     minHeight: "80vh",
     h1: {
-      width: "50%",
+      width: "40vw",
       color: "white",
-      marginLeft: "5%",
+      margin: "0",
+      marginRight: "2%",
+      fontSize: "100px",
+      display: "flex",
+      alignItems: "center",
+      alignContent: "flex-start",
+      // textAlign: "center",
     },
   };
 
