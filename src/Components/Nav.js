@@ -46,7 +46,7 @@ const Nav = () => {
     <div style={styles.container}>
       <div style={styles.logo}>
         <Link style={styles.logo.h2}>
-          <h2 onClick={() => history.push("/main")}>TEAM 2</h2>
+          <h2 onClick={() => history.push("/")}>TEAM 2</h2>
         </Link>
       </div>
       <div style={styles.nav}>
