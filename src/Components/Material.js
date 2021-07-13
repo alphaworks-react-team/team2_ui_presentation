@@ -1,32 +1,45 @@
 import React from 'react'
 
-const MaterialCard = () => {
+const materialCard = () => {
 
 
   const styles = {
-    wrap : {
-      height : "200px",
-      width : "200px",
+    wrap: {
+      height: "80vh",
+      width: "100%",
       backgroundColor: "black",
-      cardPhoto: {
-        height: "50%",
-        width: "100%",
-      },
-      cardText: {
-
-      },
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    card: {
+      height: "500px",
+      width: "400px",
+      backgroundColor: "red",
+    },
+    photo: {
+      height: "50%",
+      width: "100%",
+      backgroundColor: "blue",
+    },
+    text: {
+      height: "50%",
+      width: "100%",
+      backgroundColor: "green",
     }
-  }
+  };
   //test push
   
   
   
   return (
     <div style={styles.wrap}>
-        <div style={styles.wrap.cardPhoto}></div>
-        <div style={styles.wrap.cardText}></div>
+        <div style={styles.card}>
+          <div style={styles.photo}></div>
+          <div style={styles.text}></div>
+        </div>
     </div>
   )
 }
 
-export default MaterialCard
+export default materialCard
