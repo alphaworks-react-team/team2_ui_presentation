@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithubSquare } from "react-icons/fa";
 
 const Footer = () => {
   const style = {
@@ -14,7 +15,12 @@ const Footer = () => {
 
   return (
     <div style={style.footer}>
-      <div>Ari</div>
+      <div>
+        Ari
+        <div>
+          <FaGithubSquare />
+        </div>
+      </div>
       <div>Franco</div>
       <div>Marcus</div>
       <div>Seena</div>
