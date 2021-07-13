@@ -33,7 +33,7 @@ const Thirds = () => {
     },
     main: {
       width: "95%",
-      height: "500px",
+      height: "95%",
       backgroundImage: `url(${bay})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
@@ -86,27 +86,28 @@ const Thirds = () => {
       alignItems: "center",
     },
     city: {
-      width: "450px",
-      height: "252px",
+      width: "90%",
+      height: "90%",
       backgroundImage: `url(${frisco})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       backgroundSize: "cover",
     },
     frisco: {
-      width: "450px",
-      height: "252px",
+      width: "90%",
+      height: "90%",
       backgroundImage: `url(${bay})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       backgroundSize: "cover",
     },
     morman: {
-      width: "450px",
-      height: "252px",
+      width: "90%",
+      height: "90%",
       backgroundImage: `url(${morman})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
+      backgroundSize: "cover",
     },
   };
 
@@ -120,7 +121,7 @@ const Thirds = () => {
           </div>
         </div>
         <div style={styles.arrowIcons}>
-          <i className="fas fa-arrow-circle-right"></i>
+          <p>></p>
         </div>
         {/* <div style={styles.mainBorder}></div> */}
         {/* <div style={styles.mainBorder}></div> */}
