@@ -2,6 +2,7 @@ import React from "react";
 import frisco from "../image/Frisco.jpg";
 import morman from "../image/MormanTemple.jpg";
 import bay from "../image/baybridge.jpg";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 const Thirds = () => {
   const styles = {
@@ -50,7 +51,6 @@ const Thirds = () => {
       color: "white",
       fontSize: "30px",
       display: "flex",
-      justifyContent: "space-between",
       alignItems: "center",
       fontFamily: "Segoe Script",
     },
@@ -68,13 +68,13 @@ const Thirds = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      rightArrow: {
-        margin: "0",
-        color: "white",
-        fontSize: "30px",
-        fontWeight: "bold",
-        cursor: "pointer",
-      },
+      // rightArrow: {
+      //   margin: "0",
+      //   color: "white",
+      //   fontSize: "30px",
+      //   fontWeight: "bold",
+      //   cursor: "pointer",
+      // },
       leftArrow: {
         margin: "0",
         color: "white",
@@ -152,7 +152,9 @@ const Thirds = () => {
           </div>
         </div>
         <div style={styles.arrowIcons}>
-          <p style={styles.arrowIcons.rightArrow}>></p>
+          <p style={styles.arrowIcons.rightArrow}>
+            <FaAngleRight />
+          </p>
         </div>
         {/* <div style={styles.mainBorder}></div> */}
         {/* <div style={styles.mainBorder}></div> */}
