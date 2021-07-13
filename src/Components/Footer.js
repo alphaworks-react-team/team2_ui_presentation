@@ -14,10 +14,10 @@ const Footer = () => {
 
   return (
     <div style={style.footer}>
-      <div>Seena</div>
       <div>Ari</div>
-      <div>Marcus</div>
       <div>Franco</div>
+      <div>Marcus</div>
+      <div>Seena</div>
     </div>
   );
 };
