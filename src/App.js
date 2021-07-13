@@ -8,27 +8,25 @@ import Footer from "./Components/Footer.js";
 import Neumorphism from "./Components/Neumorphism.js";
 import { Route, Switch } from "react-router-dom";
 import MaterialCard from "./Components/Material.js";
-
-
-
+import Thirds from "./Components/Thirds";
 
 function App() {
   const styles = {
     // backgroundImage: `url("https://i.pinimg.com/originals/db/1d/d2/db1dd2566264bd67962dd9bb5fd65644.jpg")`,
     backgroundImage: `url(https://res.cloudinary.com/practicaldev/image/fetch/s--_MCEk7P6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/vm957e5dm3hxnwc94dd7.jpg)`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
   };
 
   return (
-    <div className='App' style={styles}>
+    <div className="App" style={styles}>
       <Nav />
       <Switch>
         <Route path="/main" exact component={Main} />
         <Route path="/glassmorphism" exact component={Glassmorphism} />
         <Route path="/flat" exact component={FlatCard} />
         <Route path="/material" exact component={MaterialCard} />
-        <Route path="/" exact component={Main} />
+        <Route path="/thirds" exact component={Thirds} />
         {/* <Main>
           <Neumorphism />
           <Glassmorphism />
