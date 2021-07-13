@@ -1,7 +1,6 @@
 import React from 'react';
-import arrow_l from '../image/leftarrowari.png';
-import arrow_r from '../image/rightarrowari.png';
-import heart from '../image/heartari.png';
+import { BsPower } from 'react-icons/bs';
+import { FiSettings } from 'react-icons/fi';
 
 const Neumorphicdesign = () => {
   const styles = {
@@ -11,10 +10,10 @@ const Neumorphicdesign = () => {
       justifyContent: 'space-around',
       alignItems: 'center',
     },
-    main: {
+    card: {
       maxHeight: '100%',
       width: '400px',
-      height: '650px',
+      height: '750px',
       background: 'rgb(87,87,87)',
       background:
         'linear-gradient(180deg, rgba(87,87,87,1) 0%, rgba(25,25,25,1) 100%)',
@@ -28,37 +27,49 @@ const Neumorphicdesign = () => {
       border: 'solid 1px #575757',
       borderRadius: '25px',
     },
-    description: {
+    nav: {
       maxHeight: '100%',
       width: '400px',
-      height: '300px',
-      // backgroundRepeat: 'no-repeat',
-      // backgroundSize: 'cover',
+      height: '100px',
       borderTopLeftRadius: '20px',
       borderTopRightRadius: '20px',
-      // borderBottomRightRadius: '40px',
     },
     btn1: {
       width: '60px',
       height: '60px',
-      backgroundImage: `url(${arrow_l})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
       backgroundSize: '25px 25px',
       background: '#383838',
-      // background:
-      //   'linear-gradient(315deg, rgba(40,40,40,.8) 27%, rgba(60,60,60,.8) 70%)',
       borderRadius: '50px',
       border: 'none',
-      // boxShadow: '0px 0px 10px 15px rgba(90, 90, 90)',
       boxShadow:
         '12px 12px 16px 0 rgba(255, 255, 255, 0.15) inset, -8px -8px 12px 0 rgba(0, 0, 0, .25) inset,12px 12px 15px 0 rgba(0, 0, 0, 0.25),-8px -8px 15px 0 rgba(255, 255, 255, 0.15)',
       transform: `translate(310px, 30px)`,
     },
+    settingsbtn: {
+      height: '20px',
+      width: '20px',
+      color: 'grey',
+    },
+    description: {
+      width: '400px',
+      height: '250px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      dcontent: {
+        width: '80%',
+        height: '80%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: 'white',
+        padding: '10px',
+      },
+    },
     body: {
       maxHeight: '100%',
       width: '400px',
-      height: '100px',
+      height: '225px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -75,7 +86,7 @@ const Neumorphicdesign = () => {
     button: {
       maxHeight: '100%',
       width: '400px',
-      height: '150px',
+      height: '175px',
       borderBottomLeftRadius: '20px',
       borderBottomRightRadius: '20px',
       display: 'flex',
@@ -84,32 +95,39 @@ const Neumorphicdesign = () => {
     btn2: {
       width: '120px',
       height: '120px',
-      backgroundImage: `url(${heart})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      backgroundSize: '25px 25px',
       background:
         'linear-gradient(315deg, rgba(67,157,226,1) 17%, rgba(64,73,162,1) 100%)',
       borderRadius: '50%',
       border: 'none',
-      // boxShadow:
-      //   '5px 5px 8px 0 rgba(87,87,87,0.7), -5px -5px 8px 0 rgb(87,87,87,0.7)',
       boxShadow:
         '6px 6px 15px 0 rgba(0, 0, 0, 0.2) inset, -6px -6px 15px 0 rgba(255, 255, 255, 0.3) inset, 10px 10px 34px 0 rgba(0, 0, 0, 0.2), -10px -10px 34px 0 rgba(255, 255, 255, 0.3)',
       border: 'solid 3px #439de2',
     },
+    powerbtn: {
+      height: '40px',
+      width: '40px',
+      color: 'white',
+    },
   };
+
   return (
     <div style={styles.container}>
-      <div style={styles.main}>
+      <div style={styles.card}>
+        <div style={styles.nav}>
+          <button style={styles.btn1}>
+            <FiSettings style={styles.settingsbtn} />
+          </button>
+        </div>
         <div style={styles.description}>
-          <button style={styles.btn1}></button>
+          <div style={styles.description.dcontent}>Neumorphic</div>
         </div>
         <div style={styles.body}>
           <div style={styles.body.content}>TEAM 2</div>
         </div>
         <div style={styles.button}>
-          <button style={styles.btn2}></button>
+          <button style={styles.btn2}>
+            <BsPower style={styles.powerbtn} />
+          </button>
         </div>
       </div>
     </div>
