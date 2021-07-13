@@ -1,5 +1,7 @@
 import React from "react";
 
+import MaterialButtonWrap from './MaterialButtonWrap';
+
 
 const MaterialCard = () => {
   const styles = {
@@ -95,6 +97,7 @@ const MaterialCard = () => {
           </div>
         </div>
       </div>
+      <MaterialButtonWrap/>
     </div>
   );
 };
