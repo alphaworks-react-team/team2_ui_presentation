@@ -55,6 +55,7 @@ const Nav = () => {
           <p onClick={() => history.push("/flat")}>Flat</p>
           <p onClick={() => history.push("/material")}>Material</p>
           <p onClick={() => history.push("/flayout")}>F-Layout</p>
+          <p onClick={() => history.push("/thirds")}>Thirds</p>
         </Link>
       </div>
     </div>
