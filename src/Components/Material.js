@@ -1,17 +1,18 @@
 import React from "react";
-
+import MaterialDialog from "./MaterialDialog.js";
 import MaterialButtonWrap from './MaterialButtonWrap';
 
 
 const MaterialCard = () => {
   const styles = {
     wrap: {
-      height: "80vh",
+      minHeight:"80vh",
       width: "100%",
       // backgroundColor: "black",
       display: "flex",
-      justifyContent: "center",
+      flexFlow: "wrap row",
       alignItems: "center",
+      justifyContent: "space-evenly",
     },
     card: {
       maxHeight: "100%",
@@ -98,6 +99,7 @@ const MaterialCard = () => {
         </div>
       </div>
       <MaterialButtonWrap/>
+      <MaterialDialog/>
     </div>
   );
 };
