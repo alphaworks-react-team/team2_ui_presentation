@@ -14,8 +14,8 @@ const MainGlassmorphism = () => {
 
   return (
     <div style={glassContainer}>
-      <Glassmorphism />
       <Glassmorphicdesign />
+      <Glassmorphism />
     </div>
   );
 };
