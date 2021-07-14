@@ -13,7 +13,7 @@ const Neumorphicdesign = () => {
     card: {
       maxHeight: '100%',
       width: '400px',
-      height: '750px',
+      height: '700px',
       background: 'rgb(87,87,87)',
       background:
         'linear-gradient(180deg, rgba(87,87,87,1) 0%, rgba(25,25,25,1) 100%)',
@@ -28,7 +28,7 @@ const Neumorphicdesign = () => {
       borderRadius: '25px',
     },
     nav: {
-      maxHeight: '100%',
+      maxHeight: '20%',
       width: '400px',
       height: '100px',
       borderTopLeftRadius: '20px',
@@ -41,6 +41,9 @@ const Neumorphicdesign = () => {
       background: '#383838',
       borderRadius: '50px',
       border: 'none',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
       boxShadow:
         '12px 12px 16px 0 rgba(255, 255, 255, 0.15) inset, -8px -8px 12px 0 rgba(0, 0, 0, .25) inset,12px 12px 15px 0 rgba(0, 0, 0, 0.25),-8px -8px 15px 0 rgba(255, 255, 255, 0.15)',
       transform: `translate(310px, 30px)`,
@@ -51,14 +54,18 @@ const Neumorphicdesign = () => {
       color: 'grey',
     },
     description: {
+      maxHeight: '40%',
       width: '400px',
-      height: '250px',
+      height: '200px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       dcontent: {
         width: '80%',
         height: '80%',
+        backgroundImage: `url("https://picsum.photos/600")`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -67,7 +74,7 @@ const Neumorphicdesign = () => {
       },
     },
     body: {
-      maxHeight: '100%',
+      maxHeight: '20%',
       width: '400px',
       height: '225px',
       display: 'flex',
@@ -84,7 +91,7 @@ const Neumorphicdesign = () => {
       },
     },
     button: {
-      maxHeight: '100%',
+      maxHeight: '20%',
       width: '400px',
       height: '175px',
       borderBottomLeftRadius: '20px',
@@ -100,7 +107,7 @@ const Neumorphicdesign = () => {
       borderRadius: '50%',
       border: 'none',
       boxShadow:
-        '6px 6px 15px 0 rgba(0, 0, 0, 0.2) inset, -6px -6px 15px 0 rgba(255, 255, 255, 0.3) inset, 10px 10px 34px 0 rgba(0, 0, 0, 0.2), -10px -10px 34px 0 rgba(255, 255, 255, 0.3)',
+        '6px 6px 15px 0 rgba(0, 0, 0, 0.3) inset, -6px -6px 15px 0 rgba(255, 255, 255, 0.3) inset, 10px 10px 34px 0 rgba(0, 0, 0, 0.2), -7px -7px 30px 0 rgba(255, 255, 255, 0.25)',
       border: 'solid 3px #439de2',
     },
     powerbtn: {
