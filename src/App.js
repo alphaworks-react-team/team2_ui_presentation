@@ -10,6 +10,7 @@ import { Route, Switch } from 'react-router-dom';
 import MaterialCard from './Components/Material.js';
 import Thirds from './Components/Thirds';
 import Neumorphicdesign from './Components/Neumorphicdesign.js';
+import Glassmorphicdesign from './Components/Glassmorphicdesign.js';
 
 function App() {
   const styles = {
@@ -25,7 +26,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Main} />
         <Route path='/glassmorphism' exact component={Glassmorphism} />
-        <Route path='/flat' exact component={Neumorphicdesign} />
+        <Route path='/flat' exact component={Glassmorphicdesign} />
         <Route path='/material' exact component={MaterialCard} />
         <Route path='/thirds' exact component={Thirds} />
         {/* <Main>

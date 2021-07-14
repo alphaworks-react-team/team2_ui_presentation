@@ -17,7 +17,6 @@ const Neumorphicdesign = () => {
       background: 'rgb(87,87,87)',
       background:
         'linear-gradient(180deg, rgba(87,87,87,1) 0%, rgba(25,25,25,1) 100%)',
-      borderRadius: '20px',
       display: 'flex',
       flexFlow: 'wrap',
       justifyContent: 'flex-end',
