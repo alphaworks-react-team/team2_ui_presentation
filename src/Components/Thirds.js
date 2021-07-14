@@ -3,6 +3,7 @@ import frisco from "../image/Frisco.jpg";
 import morman from "../image/MormanTemple.jpg";
 import bay from "../image/baybridge.jpg";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import { BsFillArchiveFill } from "react-icons/bs";
 
 const Thirds = () => {
   const styles = {
