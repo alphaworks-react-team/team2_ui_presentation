@@ -1,0 +1,5 @@
+.hover:hover {
+  background: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(0px) !important;
+  font-weight: bold !important;
+}
