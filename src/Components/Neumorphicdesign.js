@@ -56,7 +56,7 @@ const Neumorphicdesign = () => {
     description: {
       maxHeight: '40%',
       width: '400px',
-      height: '200px',
+      height: '250px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -76,7 +76,7 @@ const Neumorphicdesign = () => {
     body: {
       maxHeight: '20%',
       width: '400px',
-      height: '225px',
+      height: '200px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -93,7 +93,7 @@ const Neumorphicdesign = () => {
     button: {
       maxHeight: '20%',
       width: '400px',
-      height: '175px',
+      height: '150px',
       borderBottomLeftRadius: '20px',
       borderBottomRightRadius: '20px',
       display: 'flex',
