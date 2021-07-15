@@ -13,6 +13,7 @@ import MainGlassmorphism from "./pages/MainGlassmorphism";
 import MainNeumorphism from "./pages/MainNeumorphism";
 import MainFlat from "./pages/MainFlat";
 import MainMaterial from "./pages/MainMaterial.js";
+import Flayout from './pages/Flayout';
 
 function App() {
   const styles = {
@@ -26,12 +27,13 @@ function App() {
     <div className="App" style={styles}>
       <Nav />
       <Switch>
-        <Route path="/" exact component={Main} />
-        <Route path="/glassmorphism" exact component={MainGlassmorphism} />
-        <Route path="/neumorphism" exact component={MainNeumorphism} />
-        <Route path="/flat" exact component={MainFlat} />
-        <Route path="/material" exact component={MainMaterial} />
-        <Route path="/thirds" exact component={Thirds} />
+        <Route path='/' exact component={Main} />
+        <Route path='/flayout' exact component={Flayout} />
+        <Route path='/glassmorphism' exact component={MainGlassmorphism} />
+        <Route path='/neumorphism' exact component={MainNeumorphism} />
+        <Route path='/flat' exact component={MainFlat} />
+        <Route path='/material' exact component={MainMaterial} />
+        <Route path='/thirds' exact component={Thirds} />
         {/* <Main>
           <Neumorphism />
           <Glassmorphism />
