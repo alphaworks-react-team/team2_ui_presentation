@@ -9,8 +9,8 @@ const Flatdesign = () => {
       alignItems: 'center',
     },
     main: {
-      width: '20vw',
-      height: '60vh',
+      width: '400px',
+      height: '650px',
       background: 'grey',
       position: 'relative',
       // borderRadius: '10px',
@@ -32,7 +32,6 @@ const Flatdesign = () => {
       color: 'white',
     },
     cardBody: {
-      margin: '0px',
       width: '80%',
       height: '40%',
       display: 'flex',
