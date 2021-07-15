@@ -20,11 +20,12 @@ const Glassmorphicdesign = () => {
       justifyContent: 'flex-end',
       position: 'relative',
       boxShadow:
-        '35px 35px 40px 0 rgba(46, 5, 16, 0.4), -10px -10px 20px 0 rgb(237, 120, 149)',
+        '35px 35px 40px 0 rgba(46, 5, 16, 0.4), -10px -10px 20px 0 rgb(255, 255, 255, 0.3)',
       border: '1px solid rgba( 255, 255, 255, 0.18 )',
       borderRadius: '25px',
     },
     header: {
+      maxHeight: '30%',
       width: '400px',
       height: '200px',
       display: 'flex',
@@ -40,6 +41,7 @@ const Glassmorphicdesign = () => {
       borderRadius: '50%',
     },
     body: {
+      maxHeight: '20%',
       width: '400px',
       height: '150px',
       display: 'flex',
@@ -72,6 +74,7 @@ const Glassmorphicdesign = () => {
       color: 'rgba(255,255,255)',
     },
     content: {
+      maxHeight: '50%',
       width: '400px',
       height: '350px',
       display: 'flex',
