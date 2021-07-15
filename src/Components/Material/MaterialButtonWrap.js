@@ -4,11 +4,9 @@ import { GoPlus } from "react-icons/go";
 const MaterialButtonWrap = () => {
   const styles = {
     wrap: {
-      height: "80vh",
-      width: "50%",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
+      
+      // width: "50%",
+    
     },
     container: {
       maxHeight: "100%",
@@ -23,8 +21,8 @@ const MaterialButtonWrap = () => {
     },
     box_1: {
       maxWidth: "100%",
-      width: "49%",
-      height: "49%",
+      width: "50%",
+      height: "50%",
       backgroundColor: "#E4E4E5",
       display: "flex",
       justifyContent: "center",

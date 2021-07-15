@@ -1,0 +1,7 @@
+* { 
+  margin: 0;
+}
+
+.backgroundHover:hover {
+  background-color: #F8F4FE !important;
+};

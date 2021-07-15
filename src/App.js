@@ -13,6 +13,7 @@ import Neumorphicdesign from './Components/Neumorphicdesign.js';
 import MainGlassmorphism from './pages/MainGlassmorphism';
 import MainNeumorphism from './pages/MainNeumorphism';
 import MainFlat from './pages/MainFlat';
+import MainMaterial from "./pages/MainMaterial.js";
 
 function App() {
   const styles = {
@@ -30,7 +31,7 @@ function App() {
         <Route path='/glassmorphism' exact component={MainGlassmorphism} />
         <Route path='/neumorphism' exact component={MainNeumorphism} />
         <Route path='/flat' exact component={MainFlat} />
-        <Route path='/material' exact component={MaterialCard} />
+        <Route path='/material' exact component={MainMaterial} />
         <Route path='/thirds' exact component={Thirds} />
         {/* <Main>
           <Neumorphism />
