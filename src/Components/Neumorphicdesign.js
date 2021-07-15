@@ -13,7 +13,7 @@ const Neumorphicdesign = () => {
     card: {
       maxHeight: '100%',
       width: '400px',
-      height: '700px',
+      height: '650px',
       background: 'rgb(87,87,87)',
       background:
         'linear-gradient(180deg, rgba(87,87,87,1) 0%, rgba(25,25,25,1) 100%)',
@@ -29,7 +29,7 @@ const Neumorphicdesign = () => {
     nav: {
       maxHeight: '20%',
       width: '400px',
-      height: '100px',
+      height: '90px',
       borderTopLeftRadius: '20px',
       borderTopRightRadius: '20px',
     },
@@ -45,7 +45,7 @@ const Neumorphicdesign = () => {
       justifyContent: 'center',
       boxShadow:
         '12px 12px 16px 0 rgba(255, 255, 255, 0.15) inset, -8px -8px 12px 0 rgba(0, 0, 0, .25) inset,12px 12px 15px 0 rgba(0, 0, 0, 0.25),-8px -8px 15px 0 rgba(255, 255, 255, 0.15)',
-      transform: `translate(310px, 30px)`,
+      transform: `translate(310px, 25px)`,
     },
     settingsbtn: {
       height: '20px',
@@ -75,7 +75,7 @@ const Neumorphicdesign = () => {
     body: {
       maxHeight: '20%',
       width: '400px',
-      height: '200px',
+      height: '150px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -92,7 +92,7 @@ const Neumorphicdesign = () => {
     button: {
       maxHeight: '20%',
       width: '400px',
-      height: '150px',
+      height: '160px',
       borderBottomLeftRadius: '20px',
       borderBottomRightRadius: '20px',
       display: 'flex',
