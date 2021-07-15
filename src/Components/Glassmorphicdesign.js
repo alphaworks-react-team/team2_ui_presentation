@@ -20,7 +20,7 @@ const Glassmorphicdesign = () => {
       justifyContent: 'flex-end',
       position: 'relative',
       boxShadow:
-        '35px 35px 40px 0 rgba(46, 5, 16, 0.4), -10px -10px 20px 0 rgb(237, 120, 149)',
+        '35px 35px 40px 0 rgba(46, 5, 16, 0.4), -10px -10px 20px 0 rgb(255, 255, 255, 0.3)',
       border: '1px solid rgba( 255, 255, 255, 0.18 )',
       borderRadius: '25px',
     },
