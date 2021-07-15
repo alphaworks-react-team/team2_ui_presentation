@@ -27,13 +27,11 @@ const Main = () => {
   return (
     <div style={styles}>
       <Neumorphism />
-      <h1 style={styles.h1}>
-       Neuomorphism vs Skeuomorphism vs Glassmorphism
-      </h1>
+      <h1 style={styles.h1}>Neuomorphism vs Skeuomorphism vs Glassmorphism</h1>
 
-      <Glassmorphism />
+      {/* <Glassmorphism />
       <Flatdesign />
-      <FlatCard />
+      <FlatCard /> */}
     </div>
   );
 };
