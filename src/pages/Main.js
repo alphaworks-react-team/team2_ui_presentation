@@ -13,24 +13,21 @@ const Main = () => {
     width: "100%",
     minHeight: "80vh",
     h1: {
-      width: "40vw",
+      width: "30vw",
       color: "white",
-      margin: "0",
-      marginRight: "2%",
-      fontSize: "100px",
+      marginRight: "5%",
+      fontSize: "75px",
       display: "flex",
       alignItems: "center",
       alignContent: "flex-start",
-      // textAlign: "center",
+      textAlign: "center",
     },
   };
 
   return (
     <div style={styles}>
       <Neumorphism />
-      <h1 style={styles.h1}>
-        Design is an integral part of web application development.
-      </h1>
+      <h1 style={styles.h1}>Neuomorphism vs Skeuomorphism vs Glassmorphism</h1>
 
       {/* <Glassmorphism />
       <Flatdesign />
