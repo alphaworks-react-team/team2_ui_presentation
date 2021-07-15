@@ -1,9 +1,16 @@
 import React from "react";
+<<<<<<< HEAD:src/Components/Main.js
 import Glassmorphism from "./Glassmorphism";
 import Flatdesign from "./Flatdesign";
 import FlatCard from "./Flatcard";
 import Neumorphism from "./Neumorphism.js";
-import Glassmorphism from '../components/Glassmorphism';
+// import Glassmorphism from '../components/Glassmorphism';
+=======
+// import Glassmorphism from "../Components/Glassmorphism";
+// import Flatdesign from "../Components/Flatdesign";
+// import FlatCard from "../Components/Flatcard";
+import Neumorphism from "../Components/Neumorphism.js";
+>>>>>>> 4ed407c5f9d0980060d3efaffa8b62e4651ff2e3:src/pages/Main.js
 
 const Main = () => {
   const styles = {

@@ -1,33 +1,35 @@
-import './App.css';
-import Glassmorphism from './Components/Glassmorphism';
-import Flatdesign from './Components/Flatdesign';
-import FlatCard from './Components/Flatcard';
-import Nav from './Components/Nav.js';
-import Main from './Components/Main.js';
-import Footer from './Components/Footer.js';
-import Neumorphism from './Components/Neumorphism.js';
-import { Route, Switch } from 'react-router-dom';
-import MaterialCard from './Components/Material.js';
-import Thirds from './Components/Thirds';
-import Neumorphicdesign from './Components/Neumorphicdesign.js';
+import "./App.css";
+import Glassmorphism from "./Components/Glassmorphism";
+import Flatdesign from "./Components/Flatdesign";
+import FlatCard from "./Components/Flatcard";
+import Nav from "./Components/Nav.js";
+import Main from "./pages/Main";
+import Footer from "./Components/Footer.js";
+import Neumorphism from "./Components/Neumorphism.js";
+import { Route, Switch } from "react-router-dom";
+import MaterialCard from "./Components/Material/Material.js";
+import Thirds from "./Components/Thirds";
+import Neumorphicdesign from "./Components/Neumorphicdesign.js";
+import MainGlassmorphism from "./pages/MainGlassmorphism";
+import MainMaterial from "./pages/MainMaterial.js";
 
 function App() {
   const styles = {
     // backgroundImage: `url("https://i.pinimg.com/originals/db/1d/d2/db1dd2566264bd67962dd9bb5fd65644.jpg")`,
     backgroundImage: `url(https://res.cloudinary.com/practicaldev/image/fetch/s--_MCEk7P6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/vm957e5dm3hxnwc94dd7.jpg)`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
   };
 
   return (
-    <div className='App' style={styles}>
+    <div className="App" style={styles}>
       <Nav />
       <Switch>
-        <Route path='/' exact component={Main} />
-        <Route path='/glassmorphism' exact component={Glassmorphism} />
-        <Route path='/flat' exact component={Neumorphicdesign} />
-        <Route path='/material' exact component={MaterialCard} />
-        <Route path='/thirds' exact component={Thirds} />
+        <Route path="/" exact component={Main} />
+        <Route path="/glassmorphism" exact component={MainGlassmorphism} />
+        <Route path="/flat" exact component={Neumorphicdesign} />
+        <Route path="/material" exact component={MainMaterial} />
+        <Route path="/thirds" exact component={Thirds} />
         {/* <Main>
           <Neumorphism />
           <Glassmorphism />

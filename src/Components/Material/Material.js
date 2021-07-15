@@ -1,18 +1,9 @@
 import React from "react";
-
-import MaterialButtonWrap from './MaterialButtonWrap';
+import './Material.css'
 
 
 const MaterialCard = () => {
   const styles = {
-    wrap: {
-      height: "80vh",
-      width: "100%",
-      // backgroundColor: "black",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-    },
     card: {
       maxHeight: "100%",
       height: "500px",
@@ -92,12 +83,15 @@ const MaterialCard = () => {
             <p style={styles.textLight}>Lorem ipsum dolor sit.</p>
           </div>
           <div style={styles.buttonWrap}>
-            <button style={styles.button}>Action 1</button>
-            <button style={styles.button}>Action 2</button>
+            <button className="materialCardButtonHover" style={styles.button}>
+              Action 1
+            </button>
+            <button className="materialCardButtonHover" style={styles.button}>
+              Action 2
+            </button>
           </div>
         </div>
       </div>
-      <MaterialButtonWrap/>
     </div>
   );
 };
