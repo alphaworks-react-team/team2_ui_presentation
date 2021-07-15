@@ -13,15 +13,14 @@ const Main = () => {
     width: "100%",
     minHeight: "80vh",
     h1: {
-      width: "40vw",
+      width: "30vw",
       color: "white",
-      margin: "0",
-      marginRight: "2%",
-      fontSize: "100px",
+      marginRight: "5%",
+      fontSize: "75px",
       display: "flex",
       alignItems: "center",
       alignContent: "flex-start",
-      // textAlign: "center",
+      textAlign: "center",
     },
   };
 
@@ -29,12 +28,12 @@ const Main = () => {
     <div style={styles}>
       <Neumorphism />
       <h1 style={styles.h1}>
-        Design is an integral part of web application development.
+       Neuomorphism vs Skeuomorphism vs Glassmorphism
       </h1>
 
-      {/* <Glassmorphism />
+      <Glassmorphism />
       <Flatdesign />
-      <FlatCard /> */}
+      <FlatCard />
     </div>
   );
 };
