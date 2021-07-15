@@ -18,8 +18,9 @@ const MainMaterial = () => {
   return (
     <div style={styles.wrap}>
       <MaterialCard />
-      <MaterialButtonWrap />
-      <MaterialDialog />
+      <MaterialButtonWrap button_1={"Button"}  button_2={"Action"} />
+      <MaterialDialog color={"blue"} title={"Dialog Title"} content={"Dialog Body text"} button_1={"button 1"} button_2={"button 2"} btncolor={"red"}/>
+      
     </div>
   );
 };
