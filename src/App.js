@@ -13,8 +13,9 @@ import MainGlassmorphism from "./pages/MainGlassmorphism";
 import MainNeumorphism from "./pages/MainNeumorphism";
 import MainFlat from "./pages/MainFlat";
 import MainMaterial from "./pages/MainMaterial.js";
-import MorphThree from './pages/MorphThree';
-import Flayout from './pages/Flayout';
+import MorphThree from "./pages/MorphThree";
+import Flayout from "./pages/Flayout";
+import MainSkeumorphic from "./pages/MainSkeuomorphic";
 
 function App() {
   const styles = {
@@ -29,13 +30,14 @@ function App() {
       <Nav />
       <Switch>
         <Route path="/" exact component={Main} />
-        <Route path='/flayout' exact component={Flayout} />
+        <Route path="/flayout" exact component={Flayout} />
         <Route path="/glassmorphism" exact component={MainGlassmorphism} />
         <Route path="/neumorphism" exact component={MainNeumorphism} />
         <Route path="/flat" exact component={MainFlat} />
         <Route path="/material" exact component={MainMaterial} />
         <Route path="/thirds" exact component={Thirds} />
         <Route path="/morph" exact component={MorphThree} />
+        <Route path="/Skeuomorphism" exact component={MainSkeumorphic} />
         {/* <Main>
           <Neumorphism />
           <Glassmorphism />
