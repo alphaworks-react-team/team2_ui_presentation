@@ -2,7 +2,7 @@ import React from "react";
 // import Glassmorphism from "../Components/Glassmorphism";
 // import Flatdesign from "../Components/Flatdesign";
 // import FlatCard from "../Components/Flatcard";
-import Neumorphism from "../Components/Neumorphism.js";
+import Neumorphism from "../Components/MorphThree/Neumorphism.js";
 
 const Main = () => {
   const styles = {
