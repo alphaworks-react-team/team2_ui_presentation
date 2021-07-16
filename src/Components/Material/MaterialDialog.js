@@ -1,7 +1,7 @@
 import React from "react";
 import "./MaterialDialog.css";
 
-const MaterialDialog = () => {
+const MaterialDialog = (props) => {
   const styles = {
     dialog: {
       width: 240,
@@ -10,7 +10,7 @@ const MaterialDialog = () => {
     },
     dialog_container: {
       display: "flex",
-      flexFlow: "column",
+      flexFlow: "column wrap",
       // justifyContent: "",
     },
     dialog_title: {
@@ -18,11 +18,13 @@ const MaterialDialog = () => {
       minHeight: "50px",
       display: "flex",
       alignItems: "flex-end",
+      color: props.color,
     },
     dialog_content: {
       color: "rgba(0,0,0, 0.6)",
       fontWeight: 400,
       padding: "0 24px 20px",
+      maxWidth: "100%",
       // minHeight: "44px",
     },
     dialog_footer: {
@@ -39,7 +41,7 @@ const MaterialDialog = () => {
       radius: "5px",
       fontWeight: 600,
       fontSize: "1rem",
-      color: "#6301EE",
+      color: props.btncolor,
       cursor: "pointer",
     },
   };
@@ -47,15 +49,23 @@ const MaterialDialog = () => {
   return (
     <div style={styles.dialog}>
       <div style={styles.dialog_container}>
-        <h2 style={styles.dialog_title}>Dialog Title</h2>
-        <div style={styles.dialog_content}>Lorem, ipsum dolor.</div>
+        {props.title ? (
+          <h2 style={styles.dialog_title}>{props.title}</h2>
+        ) : null}
+        {props.content ? (
+          <div style={styles.dialog_content}>{props.content}</div>
+        ) : null}
         <div style={styles.dialog_footer}>
-          <button className="backgroundHover" style={styles.dialog_button}>
-            Action 1
-          </button>
-          <button className="backgroundHover" style={styles.dialog_button}>
-            Action 2
-          </button>
+          {props.button_1 ? (
+            <button className="backgroundHover" style={styles.dialog_button}>
+              {props.button_1}
+            </button>
+          ) : null}
+          {props.button_2 ? (
+            <button className="backgroundHover" style={styles.dialog_button}>
+              {props.button_2}
+            </button>
+          ) : null}
         </div>
       </div>
     </div>

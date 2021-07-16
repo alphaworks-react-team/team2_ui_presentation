@@ -12,7 +12,7 @@ const Glassmorphicdesign = () => {
     nav: {
       maxHeight: '100%',
       width: '400px',
-      height: '700px',
+      height: '650px',
       background: 'rgba(255,255,255,.4)',
       backdropFilter: 'blur(4px)',
       display: 'flex',
@@ -27,7 +27,7 @@ const Glassmorphicdesign = () => {
     header: {
       maxHeight: '30%',
       width: '400px',
-      height: '200px',
+      height: '190px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'flex-end',
@@ -43,7 +43,7 @@ const Glassmorphicdesign = () => {
     body: {
       maxHeight: '20%',
       width: '400px',
-      height: '150px',
+      height: '130px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -76,7 +76,7 @@ const Glassmorphicdesign = () => {
     content: {
       maxHeight: '50%',
       width: '400px',
-      height: '350px',
+      height: '330px',
       display: 'flex',
       flexFlow: 'column',
       justifyContent: 'space-evenly',
