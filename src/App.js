@@ -5,7 +5,7 @@ import FlatCard from "./Components/Flatcard";
 import Nav from "./Components/Nav.js";
 import Main from "./pages/Main";
 import Footer from "./Components/Footer.js";
-import Neumorphism from "./Components/Neumorphism.js";
+import Neumorphism from "./Components/MorphThree/Neumorphism.js";
 import { Route, Switch } from "react-router-dom";
 import Thirds from "./Components/Thirds";
 import Neumorphicdesign from "./Components/Neumorphicdesign.js";
@@ -13,6 +13,7 @@ import MainGlassmorphism from "./pages/MainGlassmorphism";
 import MainNeumorphism from "./pages/MainNeumorphism";
 import MainFlat from "./pages/MainFlat";
 import MainMaterial from "./pages/MainMaterial.js";
+import MorphThree from './pages/MorphThree';
 
 function App() {
   const styles = {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/flat" exact component={MainFlat} />
         <Route path="/material" exact component={MainMaterial} />
         <Route path="/thirds" exact component={Thirds} />
+        <Route path="/morph" exact component={MorphThree} />
         {/* <Main>
           <Neumorphism />
           <Glassmorphism />

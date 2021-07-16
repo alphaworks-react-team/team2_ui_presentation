@@ -2,6 +2,7 @@ import React from "react";
 import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 import Glassmorphism from "./Glassmorphism";
+import MorphThree from '../pages/MorphThree';
 
 const Nav = () => {
   const styles = {
@@ -51,6 +52,7 @@ const Nav = () => {
       </div>
       <div style={styles.nav}>
         <Link style={styles.nav.navItems}>
+          <p onClick={() => history.push('/morph')}>Morph-Three</p>
           <p onClick={() => history.push('/glassmorphism')}> Glassmorphism</p>
           <p onClick={() => history.push('/neumorphism')}>Neumorphism</p>
           <p onClick={() => history.push('/flat')}>Flat</p>
