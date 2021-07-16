@@ -1,7 +1,7 @@
 import React from "react";
 import { GoPlus } from "react-icons/go";
 
-const MaterialButtonWrap = () => {
+const MaterialButtonWrap = (props) => {
   const styles = {
     wrap: {
       
@@ -89,10 +89,10 @@ const MaterialButtonWrap = () => {
     <div style={styles.wrap}>
       <div style={styles.container}>
         <div style={styles.box_1}>
-          <button style={styles.button_1}>BUTTON</button>
+          {props.button_1 ? <button style={styles.button_1}>{props.button_1}</button> : null}
         </div>
         <div style={styles.box_1}>
-          <button style={styles.button_2}>BUTTON</button>
+          {props.button_2 ? <button style={styles.button_2}>{props.button_2}</button> : null}
         </div>
         <div style={styles.box_1}>
           <button style={styles.button_3}>BUTTON</button>
