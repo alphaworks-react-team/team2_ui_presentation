@@ -20,12 +20,15 @@ const Flayout = () => {
     jumbotron: {
       width: '100%',
       height: '20vh',
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
       // background: 'blue',
     },
     jb_text: {
-      width: '100%',
-      height: '100%',
-      background: 'black',
+      width: '80%',
+      height: '80%',
+      // background: 'black',
     },
     body: {
       width: '100%',
@@ -71,7 +74,13 @@ const Flayout = () => {
     <div style={styles.layout}>
       <div style={styles.main}>
         <div style={styles.jumbotron}>
-          <div style={styles.jb_text}></div>
+          <div style={styles.jb_text}>
+            <h1>Hello, World</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, labore?</p>
+            <hr />
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur in rem inventore delectus sint unde.</p>
+            
+          </div>
         </div>
         <div style={styles.body}>
           <div style={styles.box1}>
