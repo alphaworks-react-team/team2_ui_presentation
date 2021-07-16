@@ -517,6 +517,7 @@ const NeumorphismKey = () => {
   const playAudio = () => {
     console.log("playing");
     setPlaying(true);
+    audio.volume = 0.1;
     audio.play();
   };
 
