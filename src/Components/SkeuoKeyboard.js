@@ -504,13 +504,17 @@ const NeumorphismKey = () => {
 
   // const toggle = () => setPlaying(!playing);
 
-  const clickButton = () => {
-    console.log("press");
-    if (!press) {
-      setPress(true);
-    } else if (press) {
-      setPress(false);
-    }
+  // const clickButton = () => {
+  //   console.log("press");
+  //   if (!press) {
+  //     setPress(true);
+  //   } else if (press) {
+  //     setPress(false);
+  //   }
+  // };
+
+  const toggle = () => {
+    !press ? setPress(true) : setPress(false);
   };
 
   // const unClickButton = () => {
@@ -701,7 +705,7 @@ const NeumorphismKey = () => {
               <div style={button}>
                 <div
                   style={press ? powerButton : unpressedButton}
-                  onClick={() => clickButton()}
+                  onClick={() => toggle()}
                 >
                   <BsPlay style={icon} />
                 </div>
@@ -710,7 +714,7 @@ const NeumorphismKey = () => {
               <div style={button}>
                 <div
                   style={!press ? powerButton : unpressedButton}
-                  onClick={() => clickButton()}
+                  onClick={() => toggle()}
                 >
                   <BsStop style={icon} />
                 </div>
