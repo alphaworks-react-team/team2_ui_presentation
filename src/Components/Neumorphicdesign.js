@@ -23,7 +23,7 @@ const Neumorphicdesign = () => {
       position: 'relative',
       boxShadow:
         '35px 35px 40px 0 rgba(46, 5, 16, 0.4), -10px -10px 20px 0 rgb(255, 255, 255, 0.3)',
-      border: 'solid 1px #575757',
+      border: 'solid 1px #636363',
       borderRadius: '25px',
     },
     nav: {
@@ -33,9 +33,9 @@ const Neumorphicdesign = () => {
       borderTopLeftRadius: '20px',
       borderTopRightRadius: '20px',
     },
-    btn1: {
-      width: '60px',
-      height: '60px',
+    navbtn1: {
+      width: '50px',
+      height: '50px',
       backgroundSize: '25px 25px',
       background: '#383838',
       borderRadius: '50px',
@@ -98,7 +98,7 @@ const Neumorphicdesign = () => {
       display: 'flex',
       justifyContent: 'center',
     },
-    btn2: {
+    bodybtn1: {
       width: '120px',
       height: '120px',
       background:
@@ -120,7 +120,7 @@ const Neumorphicdesign = () => {
     <div style={styles.container}>
       <div style={styles.card}>
         <div style={styles.nav}>
-          <button style={styles.btn1}>
+          <button style={styles.navbtn1}>
             <FiSettings style={styles.settingsbtn} />
           </button>
         </div>
@@ -131,7 +131,7 @@ const Neumorphicdesign = () => {
           <div style={styles.body.content}>TEAM 2</div>
         </div>
         <div style={styles.button}>
-          <button style={styles.btn2}>
+          <button style={styles.bodybtn1}>
             <BsPower style={styles.powerbtn} />
           </button>
         </div>
