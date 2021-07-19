@@ -429,41 +429,43 @@ const NeumorphismKey = () => {
       alignItems: "center",
       cursor: "pointer",
     },
-    icon: {
-      width: "70%",
-      height: "70%",
-      color: "white",
-    },
-    redIcon: {
-      width: "70%",
-      height: "70%",
-      color: "red",
-    },
-    text: {
-      color: "white",
-      fontSize: "10px",
-      margin: "0",
-      marginTop: "3px",
-    },
     unpressedButton: {
+      width: "60%",
+      height: "60%",
+      background: "rgb(84,83,86)",
       boxShadow: `0 3px 3px black, -3px -3px 3px grey`,
+      borderTop: "1px solid rgba(255, 255, 255, 0.3)",
+      borderRadius: "4px",
+      boxSizing: "border-box",
+      display: "flex",
+      flexFlow: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      cursor: "pointer",
       // boxShadow: `0 3px 2px rgba(0, 0, 0, 0.034),
       // 0 7px 5px rgba(0, 0, 0, 0.048),
       // 0 13px 10px rgba(0, 0, 0, 0.06),
       // 0 22px 18px rgba(0, 0, 0, 0.072),
       // 0 42px 33px rgba(0, 0, 0, 0.086),
       // 0 100px 80px rgba(0, 0, 0, 0.12)`,
-      width: "60%",
-      height: "60%",
-      background: "rgb(84,83,86)",
-      borderRadius: "4px",
-      display: "flex",
-      flexFlow: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      borderTop: "1px solid rgba(255, 255, 255, 0.3)",
-      boxSizing: "border-box",
-      cursor: "pointer",
+    },
+    icon: {
+      width: "70%",
+      height: "70%",
+      color: "white",
+      pointerEvents: "none",
+    },
+    redIcon: {
+      width: "70%",
+      height: "70%",
+      color: "red",
+      pointerEvents: "none",
+    },
+    text: {
+      color: "white",
+      fontSize: "10px",
+      margin: "0",
+      marginTop: "3px",
     },
   };
 
@@ -499,7 +501,18 @@ const NeumorphismKey = () => {
 
   const [playing, setPlaying] = useState(false);
   const [audio] = useState(new Audio(chicken));
-  const [press, setPress] = useState(true);
+  const [press, setPress] = useState({
+    play: true,
+  });
+
+  useEffect(() => {
+    console.log(press);
+  }, [press]);
+
+  const toggleButtons = (e) => {
+    setPress({ ["play"]: !e.target.getAttribute("value") });
+  };
+
   // let audio = new Audio(chicken);
 
   // const toggle = () => setPlaying(!playing);
@@ -513,9 +526,21 @@ const NeumorphismKey = () => {
   //   }
   // };
 
-  const toggle = () => {
-    !press ? setPress(true) : setPress(false);
-  };
+  // const toggle = (e) => {
+  //   console.log(e.target);
+  //   e.target.classList.add("pressed");
+  //   console.log("clicked");
+  //   e.target.className == "pressed"
+  //     ? (e.target.className = "unPressed")
+  //     : (e.target.className = "pressed");
+  //   e.target.className == "pressed"
+  //     ? (e.target.style.boxShadow = `0 3px 3px black, -3px -3px 3px grey`)
+  //     : (e.target.style.boxShadow = `inset 0px 5px 5px black`);
+  //   // e.target.className == "pressed"
+  //   //   ? (e.target.style.border = `0 3px 3px black, -3px -3px 3px grey`)
+  //   //   : (e.target.style.border = `inset 0px 5px 5px black`);
+  //   console.log(e.target.className);
+  // };
 
   // const unClickButton = () => {
   //   console.log("unpress");
@@ -704,18 +729,18 @@ const NeumorphismKey = () => {
             <div style={buttonControls}>
               <div style={button}>
                 <div
-                  style={press ? powerButton : unpressedButton}
-                  onClick={() => toggle()}
+                  style={!press.play ? unpressedButton : powerButton}
+                  onClick={(e) => toggleButtons(e)}
+                  name="play"
+                  value={press.play}
                 >
                   <BsPlay style={icon} />
                 </div>
                 <p style={text}>Play</p>
               </div>
+
               <div style={button}>
-                <div
-                  style={!press ? powerButton : unpressedButton}
-                  onClick={() => toggle()}
-                >
+                <div style={unpressedButton}>
                   <BsStop style={icon} />
                 </div>
                 <p style={text}>Stop</p>
