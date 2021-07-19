@@ -1,6 +1,7 @@
 import React from 'react';
 import Neumorphicdesign from '../Components/Neumorphicdesign';
 import Neumorphism from '../Components/MorphThree/Neumorphism.js';
+import Neumorphicdesign2 from '../Components/Neumorphicdesign2';
 
 const MainNeumorphism = () => {
   const neumorphicContainer = {
@@ -16,6 +17,7 @@ const MainNeumorphism = () => {
     <div style={neumorphicContainer}>
       <Neumorphism />
       <Neumorphicdesign />
+      <Neumorphicdesign2 />
     </div>
   );
 };
