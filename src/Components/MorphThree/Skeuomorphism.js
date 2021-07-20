@@ -13,7 +13,7 @@ const Skeuomorphism = () => {
             borderRadius: "45px",
             height: "600px",
             width: "288px",
-          },
+        },
     }
     return (
         <div>
