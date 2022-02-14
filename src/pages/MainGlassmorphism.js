@@ -3,7 +3,6 @@ import Glassmorphism from '../Components/Glassmorphism';
 import Glassmorphicdesign from '../Components/Glassmorphicdesign';
 import Glassmorphic from '../Components/Glassmorphic.js';
 import sprite from "../image/sprite.png"
-import coke from "../image/coke.png"
 
 const MainGlassmorphism = () => {
   const glassContainer = {

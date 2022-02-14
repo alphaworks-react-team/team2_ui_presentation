@@ -3,7 +3,6 @@ import frisco from "../image/Frisco.jpg";
 import morman from "../image/MormanTemple.jpg";
 import bay from "../image/baybridge.jpg";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
-import { BsFillArchiveFill } from "react-icons/bs";
 
 const Thirds = () => {
   const styles = {
@@ -137,15 +136,12 @@ const Thirds = () => {
           <div style={styles.main}>
             <p style={styles.text}>
               A photograph is the pause button of life
-              {/* <p style={styles.life}>life</p> */}
             </p>
           </div>
         </div>
         <div style={styles.arrowBorder}>
           <FaAngleRight style={styles.arrowBorder.icons} />
         </div>
-        {/* <div style={styles.mainBorder}></div> */}
-        {/* <div style={styles.mainBorder}></div> */}
       </div>
       <div style={styles.cardWrapper}>
         <div style={styles.cardBorder}>

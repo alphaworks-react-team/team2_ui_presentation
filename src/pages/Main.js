@@ -1,8 +1,4 @@
 import React from 'react';
-// import Glassmorphism from "../Components/Glassmorphism";
-// import Flatdesign from "../Components/Flatdesign";
-// import FlatCard from "../Components/Flatcard";
-import Neumorphism from '../Components/MorphThree/Neumorphism.js';
 
 const Main = () => {
   const styles = {
@@ -18,12 +14,7 @@ const Main = () => {
     h1: {
       width: '40vw',
       color: 'white',
-      // marginRight: '5%',
       fontSize: '100px',
-      // display: 'flex',
-      // alignItems: 'center',
-      // alignContent: 'flex-start',
-      // textAlign: 'center',
     },
   };
 
@@ -32,10 +23,6 @@ const Main = () => {
       <div style={styles.jumbotron}>
         <h1 style={styles.h1}>DESIGN IS AN INTEGRAL PART OF WEB DEVELOPMENT</h1>
       </div>
-      {/* <Neumorphism /> */}
-      {/* <Glassmorphism />
-      <Flatdesign />
-      <FlatCard /> */}
     </div>
   );
 };

@@ -155,8 +155,6 @@ const NeumorphismKey = () => {
       display: "flex",
       justifyContent: "space-around",
       alignItems: "center",
-      // border: "1px",
-      // boxSizing: "border-box",
     },
     control: {
       width: "20px",
@@ -183,8 +181,6 @@ const NeumorphismKey = () => {
     knobBox: {
       width: "55px",
       height: "55px",
-      // border: "1px solid white",
-      // boxSizing: "border-box",
       margin: "5px",
       display: "flex",
       flexFlow: "column",
@@ -196,8 +192,6 @@ const NeumorphismKey = () => {
       width: "60%",
       height: "60%",
       borderRadius: "50%",
-      // border: "1px solid #222",
-      // backgroundColor: "grey",
       boxShadow: `0 3px 3px black, -3px -3px 3px grey`,
       display: "flex",
       justifyContent: "center",
@@ -232,12 +226,6 @@ const NeumorphismKey = () => {
       alignContent: "center",
     },
     padGroupTwo: {
-      // width: "100%",
-      // height: "150px",
-      // border: "1px solid red",
-      // borderRadius: "4px",
-      // marginLeft: "6px",
-      // marginBottom: "6px",
       display: "flex",
       flexFlow: "row wrap",
       justifyContent: "space-around",
@@ -273,14 +261,6 @@ const NeumorphismKey = () => {
       borderRadius: "4px",
       boxShadow: `0 3px 3px black, -3px -3px 3px grey`,
       cursor: "pointer",
-      // boxShadow: `0 3px 2px rgba(0, 0, 0, 0.034),
-      // 0 7px 5px rgba(0, 0, 0, 0.048),
-      // 0 13px 10px rgba(0, 0, 0, 0.06),
-      // 0 22px 18px rgba(0, 0, 0, 0.072),
-      // 0 42px 33px rgba(0, 0, 0, 0.086),
-      // 0 100px 80px rgba(0, 0, 0, 0.12),
-      // -5px 0 5px rgb(84,83,86)
-      // `,
     },
     redPadButton: {
       margin: "5px",
@@ -406,15 +386,7 @@ const NeumorphismKey = () => {
       flexFlow: "column",
       alignItems: "center",
       justifyContent: "center",
-      // background: "rgb(84,83,86)",
-      // border: "1px solid white",
       borderRadius: "4px",
-      // boxShadow: `0 3px 2px rgba(0, 0, 0, 0.034),
-      // 0 7px 5px rgba(0, 0, 0, 0.048),
-      // 0 13px 10px rgba(0, 0, 0, 0.06),
-      // 0 22px 18px rgba(0, 0, 0, 0.072),
-      // 0 42px 33px rgba(0, 0, 0, 0.086),
-      // 0 100px 80px rgba(0, 0, 0, 0.12)`,
     },
     powerButton: {
       width: "60%",
@@ -442,12 +414,6 @@ const NeumorphismKey = () => {
       justifyContent: "center",
       alignItems: "center",
       cursor: "pointer",
-      // boxShadow: `0 3px 2px rgba(0, 0, 0, 0.034),
-      // 0 7px 5px rgba(0, 0, 0, 0.048),
-      // 0 13px 10px rgba(0, 0, 0, 0.06),
-      // 0 22px 18px rgba(0, 0, 0, 0.072),
-      // 0 42px 33px rgba(0, 0, 0, 0.086),
-      // 0 100px 80px rgba(0, 0, 0, 0.12)`,
     },
     icon: {
       width: "70%",
@@ -469,36 +435,6 @@ const NeumorphismKey = () => {
     },
   };
 
-  // const useAudio = (url) => {
-  //   const [audio] = useState(new Audio(url));
-  //   const [playing, setPlaying] = useState(false);
-
-  //   const toggle = () => setPlaying(!playing);
-
-  //   useEffect(() => {
-  //     playing ? audio.play() : audio.pause();
-  //   }, [playing]);
-
-  //   useEffect(() => {
-  //     audio.addEventListener("ended", () => setPlaying(false));
-  //     return () => {
-  //       audio.removeEventListener("ended", () => setPlaying(false));
-  //     };
-  //   }, []);
-
-  //   return [playing, toggle];
-  // };
-
-  // const Player = (url) => {
-  //   const [playing, toggle] = useAudio(url);
-  //   console.log("hello");
-  //   return (
-  //     <div>
-  //       <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
-  //     </div>
-  //   );
-  // };
-
   const [playing, setPlaying] = useState(false);
   const [audio] = useState(new Audio(chicken));
   const [press, setPress] = useState({
@@ -512,41 +448,6 @@ const NeumorphismKey = () => {
   const toggleButtons = (e) => {
     setPress({ ["play"]: !e.target.getAttribute("value") });
   };
-
-  // let audio = new Audio(chicken);
-
-  // const toggle = () => setPlaying(!playing);
-
-  // const clickButton = () => {
-  //   console.log("press");
-  //   if (!press) {
-  //     setPress(true);
-  //   } else if (press) {
-  //     setPress(false);
-  //   }
-  // };
-
-  // const toggle = (e) => {
-  //   console.log(e.target);
-  //   e.target.classList.add("pressed");
-  //   console.log("clicked");
-  //   e.target.className == "pressed"
-  //     ? (e.target.className = "unPressed")
-  //     : (e.target.className = "pressed");
-  //   e.target.className == "pressed"
-  //     ? (e.target.style.boxShadow = `0 3px 3px black, -3px -3px 3px grey`)
-  //     : (e.target.style.boxShadow = `inset 0px 5px 5px black`);
-  //   // e.target.className == "pressed"
-  //   //   ? (e.target.style.border = `0 3px 3px black, -3px -3px 3px grey`)
-  //   //   : (e.target.style.border = `inset 0px 5px 5px black`);
-  //   console.log(e.target.className);
-  // };
-
-  // const unClickButton = () => {
-  //   console.log("unpress");
-  //   setPress(false);
-  // };
-
   const playAudio = () => {
     console.log("playing");
     setPlaying(true);

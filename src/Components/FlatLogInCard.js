@@ -1,5 +1,5 @@
 import React from "react";
-import { IoMdContact, IoIosHeadset } from "react-icons/io";
+import { IoIosHeadset } from "react-icons/io";
 
 const FlatUi = () => {
   const {
@@ -15,15 +15,6 @@ const FlatUi = () => {
     welcomeText,
     appText,
   } = {
-    // container: {
-    //   background: "#3498db",
-    //   width: "80vw",
-    //   height: "80vh",
-    //   margin: "auto",
-    //   display: "flex",
-    //   justifyContent: "center",
-    //   alignItems: "center",
-    // },
     cardContainer: {
       margin: "0",
       height: "200px",

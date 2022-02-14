@@ -89,7 +89,7 @@ const Glassmorphicdesign = () => {
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: '15px',
-      background: 'white',
+      backgroundColor: 'white',
       border: 'none',
       background: 'none',
       fontSize: '25px',
